@@ -408,6 +408,10 @@ images:
   - filename: "renderings-raelian-symbol-of-infinity.jpg"
     quality: 90
     grain_intensity: 0.03
+  
+  - filename: "wheel-of-heaven-background.png"
+    quality: 90
+    grain_intensity: 0.1
 
   - filename: "wheel-of-heaven-banner.jpg"
     quality: 90

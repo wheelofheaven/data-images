@@ -1,22 +1,33 @@
 # Wheel of Heaven Image Assets
 
-Processed image assets for the [Wheel of Heaven](https://www.wheelofheaven.io) website.
+Image assets and processing pipeline for the [Wheel of Heaven](https://www.wheelofheaven.io) project.
 
 ## Overview
 
-This repository contains optimized images used throughout the Wheel of Heaven project. Raw images are processed into modern formats (AVIF, WebP) with consistent styling.
+This repository contains all image-related assets: creative source files, raw images, and processed outputs optimized for web delivery.
 
 ## Directory Structure
 
 ```
 data-images/
-├── raw/              # Original source images
-├── processed/        # Optimized output images (AVIF, WebP)
+├── sources/          # Creative source files
+│   ├── dall-e/       # AI-generated images
+│   └── inkscape/     # Vector drawings and SVGs
+├── raw/              # Original photographs and images
+├── processed/        # Optimized output (AVIF, WebP)
 ├── backup/           # Backup copies
 ├── scripts/          # Image processing scripts
 ├── manifest.yaml     # Processing configuration
 └── mise.toml         # Task runner configuration
 ```
+
+## Source Assets
+
+### DALL-E (`sources/dall-e/`)
+AI-generated images created with DALL-E for illustrations and conceptual artwork.
+
+### Inkscape (`sources/inkscape/`)
+Vector source files (.svg) for diagrams, logos, and scalable graphics.
 
 ## Image Processing
 
@@ -47,13 +58,18 @@ mise run process  # Process all enabled images
 ## Image Categories
 
 - **Astronomical** - Stellarium screenshots, equinox visualizations
-- **Illustrations** - Diagrams, infographics
+- **Illustrations** - Diagrams, infographics, AI-generated art
 - **Historical** - Archival images, artifacts
+- **Vectors** - Logos, icons, diagrams (SVG sources)
 
 ## Usage
 
-Processed images are deployed to the main website's `static/images/` directory or served via CDN.
+Processed images are deployed to:
+- Main website: `static/images/`
+- CDN for optimized delivery
 
 ## License
 
-Images are provided under various licenses. See individual image metadata for attribution requirements.
+- Original artwork: CC0-1.0 (Public Domain)
+- AI-generated images: Subject to generator terms
+- Third-party images: See individual metadata for attribution
