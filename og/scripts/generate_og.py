@@ -258,10 +258,16 @@ def _section_and_slug(rel_parts: tuple[str, ...], filename: str) -> tuple[str, s
     content/wiki/elohim.md           → ("wiki", "elohim")
     content/wiki/_index.md           → ("wiki", "index")
     content/wiki/foo/_index.md       → skip (nested section)
-    content/about.md                 → None (top-level page, no section)
+    content/about.md                 → ("section", "about")   — top-level page
+    content/_index.md                → ("default", "index")   — homepage
     """
-    if len(rel_parts) < 2:
+    if len(rel_parts) == 0:
         return None
+    if len(rel_parts) == 1:
+        # Top-level file directly under content/{lang}/.
+        if filename == "_index.md":
+            return ("default", "index")
+        return ("section", Path(filename).stem)
     section = rel_parts[0]
     if filename == "_index.md":
         if len(rel_parts) > 2:
@@ -277,6 +283,15 @@ def _str(val: Any) -> str:
     if val is None:
         return ""
     return str(val)
+
+
+# Fields that don't change by language and should cascade from the EN entry
+# when the localized frontmatter doesn't carry them. Library books carry
+# author/year/original_title in EN only; we don't want to make editors
+# duplicate that fact into 9 language files.
+_CASCADE_FIELDS = ("author", "publication_year", "original_title", "zodiac_sign",
+                   "symbol", "date_range", "category", "event_date", "filed_under",
+                   "claim_type")
 
 
 def walk_content() -> list[Entry]:
@@ -359,6 +374,27 @@ def walk_content() -> list[Entry]:
             date_range=date_range,
             lang=lang,
         ))
+    return entries
+
+
+def cascade_from_english(entries: list[Entry]) -> list[Entry]:
+    """Fill empty language-invariant fields from the EN entry of the same (section, slug).
+
+    Called after manifest merge so manifest-provided author/year/etc. on EN
+    can cascade to non-EN entries.
+    """
+    en_index: dict[tuple[str, str], Entry] = {
+        (e.section, e.slug): e for e in entries if e.lang == "en"
+    }
+    for e in entries:
+        if e.lang == "en":
+            continue
+        ref = en_index.get((e.section, e.slug))
+        if ref is None:
+            continue
+        for field_name in _CASCADE_FIELDS:
+            if not getattr(e, field_name, ""):
+                setattr(e, field_name, getattr(ref, field_name, ""))
     return entries
 
 
@@ -579,6 +615,7 @@ def main():
 
     walked = [] if args.no_walk else walk_content()
     entries = merge_entries(walked, manifest_entries)
+    entries = cascade_from_english(entries)
     entries = filter_entries(entries, args)
 
     if args.dry_run:
