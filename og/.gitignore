@@ -1,0 +1,6 @@
+venv/
+processed/
+templates/fonts
+templates/.render-*.html
+__pycache__/
+*.pyc

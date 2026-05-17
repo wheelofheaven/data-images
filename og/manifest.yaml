@@ -1,0 +1,164 @@
+# Open Graph image manifest
+#
+# One entry per OG image. The renderer (scripts/generate_og.py) reads this
+# file and produces 1200x630 PNGs at processed/og/{section}/{slug}.png.
+#
+# Fields:
+#   slug          (required) — output filename and final URL path segment
+#   section       (required) — drives template choice + accent color
+#                              (wiki, timeline, library, articles, news,
+#                              sources, section, default)
+#   title         (required) — main display text
+#   summary       (optional) — short tagline below the title (3-line clamp)
+#   claim_type    (optional) — direct, framework, inferred, speculative
+#   category      (optional) — wiki entry category, displayed top-right
+#   author        (optional) — library books
+#   publication_year (optional)
+#   original_title (optional) — non-English original title for library
+#   date          (optional) — articles
+#   event_date    (optional) — news dispatches
+#   filed_under   (optional) — news dispatches
+#   symbol        (optional) — zodiac glyph or other large-display symbol (timeline)
+#   zodiac_sign   (optional) — lowercase zodiac name (aries|taurus|gemini|cancer|
+#                              leo|virgo|libra|scorpio|sagittarius|capricorn|
+#                              aquarius|pisces) — renders the bifrost SVG icon
+#   date_range    (optional) — timeline age dates
+#   template      (optional) — override the default template for the section
+#   section_label (optional) — override the chip text (default: section name uppercased)
+#   sample        (optional, default false) — include in --samples-only runs
+#   enabled       (optional, default true)
+#
+# First-pass scope: 12 section index pages + 5 representative content pages.
+# All marked sample: true so `generate_og.py --samples-only` renders this set
+# and nothing else.
+
+entries:
+
+    # ─── Section indexes (12) ──────────────────────────────────────────
+    - slug: index
+      section: default
+      title: "The gods of Genesis were a civilization."
+      summary: "A long reading of the ancient world's creation traditions through a single working hypothesis: that the Elohim were a small advanced human civilization. Organized along the precessional cycle, in twelve ages."
+      sample: true
+
+    - slug: index
+      section: wiki
+      title: "Wiki"
+      section_label: "WIKI"
+      summary: "Reference entries on the framework's terms, figures, places, and concepts. Each entry carries a claim type so you can see at a glance whether you're reading a direct claim, a framework reading, an inferred claim, or speculation."
+      sample: true
+
+    - slug: index
+      section: timeline
+      title: "Timeline"
+      section_label: "TIMELINE"
+      summary: "Twelve precessional ages. Twenty-six thousand years. One long arc, from the Elohim's arrival to the Age of Aquarius we currently inhabit."
+      sample: true
+
+    - slug: index
+      section: library
+      title: "Library"
+      section_label: "LIBRARY"
+      summary: "Source texts in interactive readers — Genesis, the Raëlian corpus, the Mesopotamian primary sources, and adjacent canon. Original and translation side by side."
+      sample: true
+
+    - slug: index
+      section: articles
+      title: "Articles"
+      section_label: "ARTICLES"
+      summary: "Long-form explainers. Idea-driven, evergreen, and disciplined about the difference between direct, inferred, and speculative claims."
+      sample: true
+
+    - slug: index
+      section: news
+      title: "Newsroom"
+      section_label: "NEWSROOM"
+      summary: "Dispatches — short readings of current events through the canon. Event-driven, time-stamped, and tied to at least one entry in the framework."
+      sample: true
+
+    - slug: index
+      section: sources
+      title: "Sources"
+      section_label: "SOURCES"
+      summary: "The bibliography behind the corpus, tiered by authority — from Raëlian primary text through ancient sources, scholarly work, scientific context, comparative traditions, and critical responses."
+      sample: true
+
+    - slug: about
+      section: section
+      title: "About"
+      section_label: "ABOUT"
+      summary: "What Wheel of Heaven is, who it's for, and how it reads."
+      sample: true
+
+    - slug: read
+      section: section
+      title: "Reading paths"
+      section_label: "READ"
+      summary: "Three ways in: the elevator pitch, the long-form reading, and the canon-first deep dive."
+      sample: true
+
+    - slug: faq
+      section: section
+      title: "Frequently asked"
+      section_label: "FAQ"
+      summary: "The questions the project gets most often, answered without dodging the speculative parts."
+      sample: true
+
+    - slug: map
+      section: section
+      title: "Map of the corpus"
+      section_label: "MAP"
+      summary: "The site's structure at a glance — how the wiki, timeline, library, articles, and dispatches relate to each other."
+      sample: true
+
+    - slug: contributing
+      section: section
+      title: "Contributing"
+      section_label: "CONTRIBUTE"
+      summary: "How to propose a wiki entry, a translation, or a dispatch, and what the editorial standards look like."
+      sample: true
+
+    # ─── Representative content pages (5) ──────────────────────────────
+    - slug: elohim
+      section: wiki
+      title: "Elohim"
+      category: "Elohim"
+      summary: "Hebrew plural for the figures conventionally translated as God. On the canon's reading: a specific advanced human civilization that designed terrestrial life and intervened across human history."
+      claim_type: speculative
+      sample: true
+
+    - slug: age-of-aquarius
+      zodiac_sign: "aquarius"
+      section: timeline
+      title: "Age of Aquarius"
+      symbol: "♒"
+      date_range: "1950 – 4110"
+      summary: "The twelfth and current age. The age of revelation — where the accumulated content of all previous ages becomes legible to a humanity at last equipped to receive it."
+      claim_type: framework
+      sample: true
+
+    - slug: the-book-which-tells-the-truth
+      section: library
+      title: "The Book Which Tells the Truth"
+      original_title: "Le Livre Qui Dit la Vérité"
+      author: "Raël"
+      publication_year: "1974"
+      claim_type: direct
+      sample: true
+
+    - slug: example-explainer
+      section: articles
+      title: "Reading Genesis as engineering log"
+      date: "2026-05-08"
+      summary: "What changes when you read the opening chapters of Genesis as a compressed report from a synthetic-biology project, rather than as theology."
+      claim_type: speculative
+      sample: true
+
+    - slug: pursue-release-01-uap-files
+      section: news
+      title: "PURSUE Release 01: U.S. Opens UAP Files to the Public"
+      event_date: "2026-05-08"
+      filed_under: "Signs of Acceleration"
+      summary: "The Department of War opened war.gov/UFO with declassified UAP imagery and reports. The framework reads this as the first datable point on the disclosure curve the Age of Aquarius §IX predicts for 2026–2030."
+      claim_type: inferred
+      sample: true

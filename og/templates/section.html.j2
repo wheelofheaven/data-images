@@ -1,0 +1,18 @@
+{% extends "_base.html.j2" %}
+
+{% block body %}
+{# Section index pages use a larger, calmer composition — the section title
+   centered, the description as Layer 1 prose underneath. No claim badge. #}
+<div style="display: flex; flex-direction: column; justify-content: center;
+            height: 100%; max-width: 980px;">
+    <h1 class="og__title" style="font-size: 96px; letter-spacing: -0.02em;">{{ title | e }}</h1>
+    {% if summary %}
+    <p class="og__summary" style="font-size: 26px; margin-top: 28px; max-width: 920px;
+                                   -webkit-line-clamp: 4;">
+        {{ summary | e }}
+    </p>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block claim %}<span></span>{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "_base.html.j2" %}
+
+{% block body %}
+{# Homepage / catch-all. The site's elevator pitch lives here. #}
+<div style="display: flex; flex-direction: column; justify-content: center;
+            height: 100%; max-width: 980px;">
+    <h1 class="og__title" style="font-size: 108px; letter-spacing: -0.022em;">{{ title | e }}</h1>
+    {% if summary %}
+    <p class="og__summary" style="font-size: 28px; margin-top: 32px; max-width: 920px;
+                                   -webkit-line-clamp: 4;">
+        {{ summary | e }}
+    </p>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block claim %}<span></span>{% endblock %}
+{% block section_chip %}
+<span class="og__section-chip">A WORKING HYPOTHESIS</span>
+{% endblock %}

@@ -1,0 +1,310 @@
+/* Wheel of Heaven OG image base styles
+ *
+ * Bifrost design tokens + 1200x630 canvas. Each template @import's this and
+ * adds its own .og--{section} class for the accent color and any layout
+ * tweaks specific to the content type.
+ *
+ * Fonts are loaded from the www site's static/fonts/vendor tree via the
+ * --fonts-dir base URL the renderer hands the page (see scripts/generate_og.py).
+ */
+
+/* Layer 1 — primary reading */
+@font-face {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/jost/jost-v19-cyrillic_latin-regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/jost/jost-v19-cyrillic_latin-700.woff2") format("woff2");
+}
+
+/* Layer 2 — structural / conceptual */
+@font-face {
+    font-family: SpaceGrotesk;
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/space-grotesk/space-grotesk-v21-latin-regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: SpaceGrotesk;
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/space-grotesk/space-grotesk-v21-latin-700.woff2") format("woff2");
+}
+
+/* Layer 3 — citation / scholarly */
+@font-face {
+    font-family: "IBM Plex Serif";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/ibm-plex-serif/ibm-plex-serif-v20-latin-regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "IBM Plex Serif";
+    font-style: italic;
+    font-weight: 400;
+    src: url("fonts/ibm-plex-serif/ibm-plex-serif-v20-latin-italic.woff2") format("woff2");
+}
+
+/* Layer 4 — technical / metadata */
+@font-face {
+    font-family: iAWriterQuattroS;
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/ia-writer-quattro/iAWriterQuattroS-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: iAWriterQuattroS;
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/ia-writer-quattro/iAWriterQuattroS-Bold.woff2") format("woff2");
+}
+
+:root {
+    /* Bifrost palette — accents */
+    --c-yellow: #fbf8cc;
+    --c-yellow-100: #fefbe9;
+    --c-yellow-800: #8e8337;
+    --c-yellow-900: #5f5722;
+    --c-pink: #fde4cf;
+    --c-soft-pink: #ffcfd2;
+    --c-lavender: #f1c0e8;
+    --c-lavender-100: #fbefff;
+    --c-lavender-800: #7a4074;
+    --c-mauve: #cfbaf0;
+    --c-mauve-100: #f4effd;
+    --c-mauve-800: #4d3884;
+    --c-blue: #a3c4f3;
+    --c-cyan: #90dbf4;
+    --c-cyan-100: #e6faff;
+    --c-cyan-800: #176480;
+    --c-teal: #8eecf5;
+    --c-mint: #98f5e1;
+    --c-green: #b9fbc0;
+
+    /* Cosmic background */
+    --c-bg-0: #0a0e1a;
+    --c-bg-1: #111726;
+    --c-bg-2: #1a2236;
+
+    /* Text on dark */
+    --c-fg: #f4f1e8;
+    --c-fg-muted: #aab3c5;
+    --c-fg-dim: #6c7790;
+
+    /* Default section accent — overridden per template */
+    --c-accent: var(--c-cyan);
+    --c-accent-dim: rgba(144, 219, 244, 0.18);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: Jost, system-ui, sans-serif;
+    color: var(--c-fg);
+    background: var(--c-bg-0);
+    position: relative;
+}
+
+/* Cosmic background — the photographic Milky Way image the rest of the site
+ * uses as its hero backdrop. Symlinked into the templates dir at render time
+ * as ./background.avif by generate_og.py. */
+.og__bg {
+    position: absolute;
+    inset: 0;
+    background:
+        url("background.avif") center/cover no-repeat,
+        var(--c-bg-0);
+    z-index: 0;
+}
+
+/* Readability overlay: darken the photo for the title/summary band and add a
+ * faint accent-tinted glow in the upper-right. The vertical ramp is near-clear
+ * at the very top so the section chip's backdrop-filter has actual photo
+ * detail to frost (instead of blurring a uniform dark layer). */
+.og__bg-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(ellipse 70% 55% at 80% 20%, var(--c-accent-dim) 0%, transparent 60%),
+        linear-gradient(
+            180deg,
+            rgba(10, 14, 26, 0.10) 0%,
+            rgba(10, 14, 26, 0.30) 20%,
+            rgba(10, 14, 26, 0.70) 55%,
+            rgba(10, 14, 26, 0.85) 100%
+        );
+    z-index: 1;
+}
+
+/* Bifrost — the rainbow bridge. Full-bleed brand stripe across the top edge
+ * using the pastel palette. Sits above the overlay so it's never dimmed. */
+.og__bifrost {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    z-index: 3;
+    background: linear-gradient(
+        90deg,
+        var(--c-yellow)   0%,
+        var(--c-pink)    14%,
+        var(--c-lavender) 28%,
+        var(--c-mauve)   42%,
+        var(--c-blue)    56%,
+        var(--c-cyan)    70%,
+        var(--c-teal)    82%,
+        var(--c-mint)    91%,
+        var(--c-green)  100%
+    );
+}
+
+.og {
+    position: relative;
+    z-index: 2;
+    width: 1200px;
+    height: 630px;
+    padding: 64px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.og__head {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.og__section-chip {
+    font-family: iAWriterQuattroS, ui-monospace, monospace;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--c-accent);
+    padding: 11px 18px;
+    border: 2px solid var(--c-accent);
+    border-radius: 5px;
+    line-height: 1;
+    /* Glassmorphism — matches the dark-theme navbar (.navbar bg + blur). */
+    background-color: rgba(27, 31, 34, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.og__meta-line {
+    font-family: iAWriterQuattroS, ui-monospace, monospace;
+    font-size: 20px;
+    color: var(--c-fg-muted);
+    letter-spacing: 0.06em;
+}
+
+.og__title {
+    font-family: SpaceGrotesk, system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 78px;
+    line-height: 1.06;
+    letter-spacing: -0.018em;
+    color: var(--c-fg);
+    /* Visual clamp — long titles drop to a smaller size via JS-free trick:
+     * we set a generous line-height and rely on the renderer's title-length
+     * check to demote .og--long titles to 60px. */
+    max-width: 1056px;
+}
+
+.og--long .og__title { font-size: 60px; line-height: 1.08; }
+.og--xlong .og__title { font-size: 48px; line-height: 1.12; }
+
+.og__summary {
+    font-family: Jost, system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--c-fg-muted);
+    max-width: 880px;
+    margin-top: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.og__foot {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.og__claim {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: iAWriterQuattroS, ui-monospace, monospace;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1.5px solid currentColor;
+    line-height: 1;
+}
+.og__claim--direct      { color: var(--c-cyan); }
+.og__claim--framework   { color: var(--c-mauve); }
+.og__claim--inferred    { color: var(--c-yellow); }
+.og__claim--speculative { color: var(--c-lavender); }
+
+.og__wordmark {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--c-fg);
+}
+
+.og__wordmark-mark {
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    flex: 0 0 60px;
+}
+.og__wordmark-mark svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.og__wordmark-text {
+    display: inline-flex;
+    height: 42px;
+    color: var(--c-fg);
+}
+.og__wordmark-text svg {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+/* Per-section accents */
+.og--wiki      { --c-accent: var(--c-cyan); --c-accent-dim: rgba(144, 219, 244, 0.18); }
+.og--timeline  { --c-accent: var(--c-yellow); --c-accent-dim: rgba(251, 248, 204, 0.16); }
+.og--library   { --c-accent: var(--c-mauve); --c-accent-dim: rgba(207, 186, 240, 0.18); }
+.og--articles  { --c-accent: var(--c-lavender); --c-accent-dim: rgba(241, 192, 232, 0.18); }
+.og--news      { --c-accent: var(--c-pink); --c-accent-dim: rgba(253, 228, 207, 0.18); }
+.og--sources   { --c-accent: var(--c-teal); --c-accent-dim: rgba(142, 236, 245, 0.16); }
+.og--section   { --c-accent: var(--c-mint); --c-accent-dim: rgba(152, 245, 225, 0.16); }
+.og--default   { --c-accent: var(--c-blue); --c-accent-dim: rgba(163, 196, 243, 0.16); }

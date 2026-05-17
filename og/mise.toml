@@ -1,0 +1,51 @@
+[tools]
+python = "3.11"
+
+[env]
+PYTHONPATH = "."
+PROJECT_NAME = "wheelofheaven-data-images-og"
+
+[tasks.setup]
+description = "Create venv, install Python deps, and install Playwright Chromium"
+run = [
+    "python -m venv venv",
+    "source venv/bin/activate && pip install --upgrade pip",
+    "source venv/bin/activate && pip install -r scripts/requirements.txt",
+    "source venv/bin/activate && python -m playwright install chromium",
+]
+
+[tasks.dry-run]
+description = "Show what would be rendered"
+run = "source venv/bin/activate && python scripts/generate_og.py --dry-run"
+
+[tasks.samples]
+description = "Render only the 17 first-pass sample entries"
+run = "source venv/bin/activate && python scripts/generate_og.py --samples-only --force"
+
+[tasks.samples-dry-run]
+description = "Show the 17 sample entries that would be rendered"
+run = "source venv/bin/activate && python scripts/generate_og.py --samples-only --dry-run"
+
+[tasks.render]
+description = "Render all enabled entries (skip ones already in processed/)"
+run = "source venv/bin/activate && python scripts/generate_og.py"
+
+[tasks.render-force]
+description = "Re-render every entry, overwriting existing PNGs"
+run = "source venv/bin/activate && python scripts/generate_og.py --force"
+
+[tasks.clean]
+description = "Delete rendered output and tmpfiles"
+run = [
+    "rm -rf processed",
+    "find templates -name '.render-*.html' -delete",
+]
+
+[tasks.clean-all]
+description = "Clean output AND venv"
+run = [
+    "rm -rf processed",
+    "rm -rf venv",
+    "find templates -name '.render-*.html' -delete 2>/dev/null || true",
+    "rm -f templates/fonts 2>/dev/null || true",
+]

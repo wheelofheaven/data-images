@@ -1,0 +1,61 @@
+<!doctype html>
+{# Shared base for every OG template. Renders a 1200x630 page with:
+   - cosmic background + faint stars
+   - section chip (top-left, accent-colored)
+   - optional meta line (top-right — date, category, etc.)
+   - large title (Space Grotesk)
+   - optional summary (Jost, 3-line clamp)
+   - footer with claim-type pill + wordmark
+
+   Child templates override {% block %}s to customize content. The
+   .og--{section} class on .og drives the accent color via _base.css. #}
+<html lang="{{ lang | default('en') }}">
+<head>
+<meta charset="utf-8">
+<title>{{ title | e }}</title>
+<link rel="stylesheet" href="_base.css">
+{% block extra_head %}{% endblock %}
+</head>
+<body>
+<div class="og__bg"></div>
+<div class="og__bg-overlay"></div>
+<div class="og__bifrost"></div>
+<div class="og og--{{ section }}{% if title_length == 'long' %} og--long{% elif title_length == 'xlong' %} og--xlong{% endif %}">
+
+    <header class="og__head">
+        {% block section_chip %}
+        <span class="og__section-chip">{{ section_label }}</span>
+        {% endblock %}
+        {% block meta_line %}
+        {% if meta_line %}<span class="og__meta-line">{{ meta_line | e }}</span>{% endif %}
+        {% endblock %}
+    </header>
+
+    <main class="og__body">
+        {% block body %}
+        <h1 class="og__title">{{ title | e }}</h1>
+        {% if summary %}
+        <p class="og__summary">{{ summary | e }}</p>
+        {% endif %}
+        {% endblock %}
+    </main>
+
+    <footer class="og__foot">
+        {% block claim %}
+        {% if claim_type %}
+        <span class="og__claim og__claim--{{ claim_type }}">
+            <span aria-hidden="true">●</span>{{ claim_type }}
+        </span>
+        {% else %}
+        <span></span>
+        {% endif %}
+        {% endblock %}
+
+        <div class="og__wordmark">
+            <span class="og__wordmark-mark" aria-hidden="true">{{ logomark_svg | safe }}</span>
+            <span class="og__wordmark-text" aria-label="Wheel of Heaven">{{ wordmark_svg | safe }}</span>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

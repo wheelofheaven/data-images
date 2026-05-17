@@ -1,0 +1,15 @@
+{% extends "_base.html.j2" %}
+{% block meta_line %}
+{% if author %}<span class="og__meta-line">{{ author | e }}{% if publication_year %} · {{ publication_year | e }}{% endif %}</span>{% endif %}
+{% endblock %}
+
+{% block body %}
+<h1 class="og__title">{{ title | e }}</h1>
+{% if original_title and original_title != title %}
+<p class="og__summary" style="font-family: SpaceGrotesk, system-ui, sans-serif; font-style: italic; margin-top: 12px;">
+    {{ original_title | e }}
+</p>
+{% elif summary %}
+<p class="og__summary">{{ summary | e }}</p>
+{% endif %}
+{% endblock %}

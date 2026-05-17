@@ -1,0 +1,16 @@
+{% extends "_base.html.j2" %}
+{% block meta_line %}
+{% if event_date %}<span class="og__meta-line">DISPATCH · {{ event_date | e }}</span>{% endif %}
+{% endblock %}
+
+{% block body %}
+<h1 class="og__title">{{ title | e }}</h1>
+{% if summary %}<p class="og__summary">{{ summary | e }}</p>{% endif %}
+{% if filed_under %}
+<p style="font-family: iAWriterQuattroS, ui-monospace, monospace; font-size: 14px;
+          letter-spacing: 0.16em; text-transform: uppercase; color: var(--c-accent);
+          margin-top: 18px;">
+    Filed under: {{ filed_under | e }}
+</p>
+{% endif %}
+{% endblock %}
