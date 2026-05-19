@@ -64,6 +64,36 @@
     src: url("fonts/ia-writer-quattro/iAWriterQuattroS-Bold.woff2") format("woff2");
 }
 
+/* Hebrew display face — Frank Ruhl Libre. Self-hosted, variable weight.
+ * Mirrors the site-side stack in themes/bifrost/sass/base/_fonts.scss. */
+@font-face {
+    font-family: "Frank Ruhl Libre";
+    font-style: normal;
+    font-weight: 400 900;
+    src: url("theme-fonts/frank-ruhl-libre/frl-hebrew.woff2") format("woff2");
+    unicode-range: U+0307-0308, U+0590-05FF, U+200C-2010, U+20AA, U+25CC,
+        U+FB1D-FB4F;
+}
+@font-face {
+    font-family: "Frank Ruhl Libre";
+    font-style: normal;
+    font-weight: 400 900;
+    src: url("theme-fonts/frank-ruhl-libre/frl-latin-ext.woff2") format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
+}
+@font-face {
+    font-family: "Frank Ruhl Libre";
+    font-style: normal;
+    font-weight: 400 900;
+    src: url("theme-fonts/frank-ruhl-libre/frl-latin.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+        U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+        U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root {
     /* Bifrost palette — accents */
     --c-yellow: #fbf8cc;
@@ -297,6 +327,30 @@ body {
     height: 100%;
     width: auto;
     display: block;
+}
+
+/* Hebrew — swap title/summary into Frank Ruhl Libre so glyphs are covered
+ * by an editorial Hebrew face rather than the browser's fallback. Chip,
+ * meta line, and claim pill keep their Latin face and fall through to
+ * Frank Ruhl Libre via the stack so navbar translations ("ויקי", "מקורות")
+ * still render in a Hebrew face. Flexbox mirrors automatically under
+ * dir="rtl" — chip jumps to the right edge, wordmark to the left — which
+ * matches the site's RTL behavior. */
+:lang(he) .og__title,
+:lang(he) .og__summary {
+    /* !important to beat the inline font-family set by news.html.j2 and
+     * library.html.j2 — we always want the editorial Hebrew face here. */
+    font-family: "Frank Ruhl Libre", "Noto Serif Hebrew", "SBL Hebrew", serif !important;
+    letter-spacing: 0;
+}
+:lang(he) .og__section-chip,
+:lang(he) .og__meta-line,
+:lang(he) .og__claim {
+    font-family: "Frank Ruhl Libre", iAWriterQuattroS, ui-monospace, monospace;
+    /* Caps + wide tracking are LTR typographic moves; Hebrew is
+     * unicameral, so flatten the tracking and drop the uppercase. */
+    text-transform: none;
+    letter-spacing: 0.04em;
 }
 
 /* Per-section accents */

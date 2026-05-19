@@ -7,7 +7,7 @@ Discovers content in two ways:
 1. **Auto-walk** (default): scans
    `www.wheelofheaven.io/content/{lang}/{section}/{slug}.md`, parses TOML
    frontmatter, and emits one OG per (lang, section, slug). Skips drafts.
-   Covers all 9 site languages.
+   Covers all 10 site languages.
 
 2. **Manifest override**: entries in `manifest.yaml` win over the same
    (lang, section, slug) key from auto-walk. Used for section indexes and
@@ -82,9 +82,15 @@ WWW_STATIC = WWW_REPO / "static"
 BRAND_DIR = WWW_STATIC / "brand"
 BACKGROUND_FILE = WWW_STATIC / "images" / "essentials" / "wheel-of-heaven-background.avif"
 FONT_VENDOR_DIR = WWW_STATIC / "fonts" / "vendor"
+# Per-script fonts (Frank Ruhl Libre, GFS Didot, Noto Sans IPA) live under
+# the theme rather than the top-level static tree.
+THEME_FONT_VENDOR_DIR = WWW_REPO / "themes" / "bifrost" / "static" / "fonts" / "vendor"
 
 # Active site languages — `en` is the default (no path prefix in content/).
-LANGUAGES = ["en", "de", "fr", "es", "ru", "ja", "zh", "zh-Hant", "ko"]
+LANGUAGES = ["en", "de", "fr", "es", "ru", "ja", "zh", "zh-Hant", "ko", "he"]
+
+# Languages rendered right-to-left.
+RTL_LANGUAGES = {"he"}
 
 CANVAS_W = 1200
 CANVAS_H = 630
@@ -449,6 +455,7 @@ def render_template(env: Environment, entry: Entry) -> str:
         zodiac_sign=entry.zodiac_sign,
         date_range=entry.date_range,
         lang=entry.lang,
+        dir="rtl" if entry.lang in RTL_LANGUAGES else "ltr",
         title_length=entry.title_length,
         meta_line=entry.category or entry.date or entry.event_date or entry.date_range,
         wordmark_svg=BRAND_WORDMARK_SVG,
@@ -481,6 +488,17 @@ def ensure_font_symlink(work_dir: Path) -> None:
         logging.warning("Font vendor dir missing at %s — fallbacks will render", FONT_VENDOR_DIR)
         return
     fonts_link.symlink_to(FONT_VENDOR_DIR, target_is_directory=True)
+
+
+def ensure_theme_font_symlink(work_dir: Path) -> None:
+    """Expose theme-only fonts (Frank Ruhl Libre for Hebrew, etc.) at ./theme-fonts/."""
+    link = work_dir / "theme-fonts"
+    if link.exists() or link.is_symlink():
+        return
+    if not THEME_FONT_VENDOR_DIR.exists():
+        logging.warning("Theme font dir missing at %s — Hebrew/Greek fallbacks will render", THEME_FONT_VENDOR_DIR)
+        return
+    link.symlink_to(THEME_FONT_VENDOR_DIR, target_is_directory=True)
 
 
 def ensure_background_symlink(work_dir: Path) -> None:
@@ -542,6 +560,7 @@ async def render_all(entries: list[Entry], force: bool) -> tuple[int, int]:
         lstrip_blocks=True,
     )
     ensure_font_symlink(TEMPLATES_DIR)
+    ensure_theme_font_symlink(TEMPLATES_DIR)
     ensure_background_symlink(TEMPLATES_DIR)
 
     rendered = 0

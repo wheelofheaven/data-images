@@ -9,7 +9,7 @@
 
    Child templates override {% block %}s to customize content. The
    .og--{section} class on .og drives the accent color via _base.css. #}
-<html lang="{{ lang | default('en') }}">
+<html lang="{{ lang | default('en') }}" dir="{{ dir | default('ltr') }}">
 <head>
 <meta charset="utf-8">
 <title>{{ title | e }}</title>

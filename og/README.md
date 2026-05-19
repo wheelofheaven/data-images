@@ -1,7 +1,7 @@
 # Open Graph image pipeline
 
 Renders 1200x630 social-card JPEGs for every published page on
-`www.wheelofheaven.io`, across all 9 site languages. Each card uses the
+`www.wheelofheaven.io`, across all 10 site languages. Each card uses the
 Bifrost design system — palette, typography, glassmorphic chip, claim-type
 badge — and reads its content from the site's TOML frontmatter.
 
@@ -40,7 +40,8 @@ processed/og/{lang}/{section}/{slug}.jpg
 
 Where:
 - `{lang}` is `en` (no path prefix in content/) or one of `de`, `fr`, `es`,
-  `ru`, `ja`, `zh`, `zh-Hant`, `ko`.
+  `ru`, `ja`, `zh`, `zh-Hant`, `ko`, `he`. Hebrew renders right-to-left
+  in Frank Ruhl Libre.
 - `{section}` is the top-level dir under `content/{lang}/` (e.g. `wiki`,
   `timeline`, `library`, `articles`, `news`). Top-level pages like
   `about.md` map to `section="section"`. The homepage (`content/_index.md`)
