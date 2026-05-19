@@ -37,7 +37,7 @@ DEFAULT_DEST = REPO_ROOT.parent.parent / "assets.wheelofheaven.io" / "images" / 
 # Anything at `images/og/<file>` (top-level) or under non-lang dirs is left
 # alone, so pre-existing brand assets (banner, background) keep their place
 # and legacy PNGs from earlier renders don't pollute the deploy.
-LANGUAGES = {"en", "de", "fr", "es", "ru", "ja", "zh", "zh-Hant", "ko"}
+LANGUAGES = {"en", "de", "fr", "es", "ru", "ja", "zh", "zh-Hant", "ko", "he"}
 ALLOWED_EXTS = {".jpg"}
 
 
