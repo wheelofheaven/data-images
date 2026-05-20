@@ -115,6 +115,10 @@ Processed images are deployed to [assets.wheelofheaven.world](https://assets.whe
 - **Historical** - Archival images, artifacts
 - **Vectors** - Logos, icons, diagrams (SVG sources)
 
+## Documentation
+
+For the full image-pipeline reference (processing config, format outputs, deploy chain, naming conventions), see the [Pipelines guide](https://docs.wheelofheaven.world/contributing/dev/pipelines/) at docs.wheelofheaven.world. For where the processed output lives, see [Architecture → Sites → assets](https://docs.wheelofheaven.world/architecture/sites/assets/).
+
 ## License
 
 - Original artwork: CC0-1.0 (Public Domain)
