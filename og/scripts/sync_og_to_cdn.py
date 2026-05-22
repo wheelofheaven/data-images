@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Sync rendered Open Graph images to the assets.wheelofheaven.io CDN repo.
+Sync rendered Open Graph images to the assets.wheelofheaven.world CDN repo.
 
-Mirrors `data-images/og/processed/og/` → `assets.wheelofheaven.io/images/og/`.
+Mirrors `data-images/og/processed/og/` → `assets.wheelofheaven.world/images/og/`.
 Adds new files, updates changed ones (compared by size+mtime+hash), and
 prunes stale files no longer in the source tree.
 
 After running this, the user still needs to:
-    cd ../../assets.wheelofheaven.io
+    cd ../../assets.wheelofheaven.world
     git add images/og && git commit -m "Sync OG images" && git push
 
 Cloudflare Pages then auto-builds and the new images are live at
@@ -31,7 +31,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SOURCE_DIR = REPO_ROOT / "processed" / "og"
-DEFAULT_DEST = REPO_ROOT.parent.parent / "assets.wheelofheaven.io" / "images" / "og"
+DEFAULT_DEST = REPO_ROOT.parent.parent / "assets.wheelofheaven.world" / "images" / "og"
 
 # Active site languages — only files under these top-level dirs are mirrored.
 # Anything at `images/og/<file>` (top-level) or under non-lang dirs is left
@@ -130,7 +130,7 @@ def main() -> int:
     if not args.source.exists():
         sys.exit(f"Source tree not found: {args.source}")
     if not args.dest.parent.exists():
-        sys.exit(f"Destination parent missing: {args.dest.parent} (clone assets.wheelofheaven.io?)")
+        sys.exit(f"Destination parent missing: {args.dest.parent} (clone assets.wheelofheaven.world?)")
     args.dest.mkdir(parents=True, exist_ok=True)
 
     if args.include_sidecars:

@@ -1,7 +1,7 @@
 # Open Graph image pipeline
 
 Renders 1200x630 social-card JPEGs for every published page on
-`www.wheelofheaven.io`, across all 10 site languages. Each card uses the
+`www.wheelofheaven.world`, across all 10 site languages. Each card uses the
 Bifrost design system — palette, typography, glassmorphic chip, claim-type
 badge — and reads its content from the site's TOML frontmatter.
 
@@ -21,7 +21,7 @@ python scripts/generate_og.py
 python scripts/sync_og_to_cdn.py --yes
 
 # Commit + push the assets repo to trigger Cloudflare Pages
-cd ../../assets.wheelofheaven.io
+cd ../../assets.wheelofheaven.world
 git add images/og && git commit -m "Sync OG images" && git push
 ```
 
@@ -31,7 +31,7 @@ Within ~30 seconds Cloudflare rebuilds and the images go live at
 ## What gets rendered
 
 The renderer auto-discovers content by walking
-`../../www.wheelofheaven.io/content/{lang}/...`. For each non-draft
+`../../www.wheelofheaven.world/content/{lang}/...`. For each non-draft
 markdown file it produces one OG image at:
 
 ```
@@ -67,7 +67,7 @@ Use `--force` to bypass the sidecar and re-render everything.
 ## Chip i18n
 
 The section chip in the top-left is translated per language. Labels come
-from `www.wheelofheaven.io/config.toml`'s `[translations]` (default English)
+from `www.wheelofheaven.world/config.toml`'s `[translations]` (default English)
 and `[languages.{lang}.translations]` blocks, keyed by `navbarWiki`,
 `navbarTimeline`, `navbarLibrary`, `navbarArticles`, `navbarNews`,
 `navbarSources`. Adding a new language to the site automatically picks up
@@ -116,7 +116,7 @@ glassmorphic chip, claim pill, and wordmark. Section accents come from
 
 ## CDN delivery
 
-Rendered files mirror to `assets.wheelofheaven.io/images/og/{lang}/...` via
+Rendered files mirror to `assets.wheelofheaven.world/images/og/{lang}/...` via
 `scripts/sync_og_to_cdn.py`. The sync script is scoped to managed paths
 (`{lang}/{section}/{slug}.jpg` only) so pre-existing brand assets at the
 top of `images/og/` are left untouched.
@@ -150,7 +150,7 @@ When you change a page's title or summary on the site:
 cd data-images/og
 python scripts/generate_og.py            # incremental: re-renders only changed pages
 python scripts/sync_og_to_cdn.py --yes   # mirror to assets repo
-cd ../../assets.wheelofheaven.io
+cd ../../assets.wheelofheaven.world
 git add images/og && git commit -m "Sync OG images" && git push
 ```
 

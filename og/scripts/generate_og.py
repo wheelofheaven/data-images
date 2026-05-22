@@ -5,7 +5,7 @@ Generate Open Graph images for Wheel of Heaven pages.
 Discovers content in two ways:
 
 1. **Auto-walk** (default): scans
-   `www.wheelofheaven.io/content/{lang}/{section}/{slug}.md`, parses TOML
+   `www.wheelofheaven.world/content/{lang}/{section}/{slug}.md`, parses TOML
    frontmatter, and emits one OG per (lang, section, slug). Skips drafts.
    Covers all 10 site languages.
 
@@ -13,7 +13,7 @@ Discovers content in two ways:
    (lang, section, slug) key from auto-walk. Used for section indexes and
    handcrafted special pages.
 
-Section chip labels are pulled from `www.wheelofheaven.io/config.toml`
+Section chip labels are pulled from `www.wheelofheaven.world/config.toml`
 (`navbarWiki`, `navbarLibrary`, etc.) so the chip reads in each language.
 
 Output: `processed/og/{lang}/{section}/{slug}.jpg` — JPEG q88, with a
@@ -75,7 +75,7 @@ SAMPLES_DIR = REPO_ROOT / "samples"
 MANIFEST = REPO_ROOT / "manifest.yaml"
 
 # www repo paths — auto-walk source + i18n source
-WWW_REPO = REPO_ROOT.parent.parent / "www.wheelofheaven.io"
+WWW_REPO = REPO_ROOT.parent.parent / "www.wheelofheaven.world"
 WWW_CONFIG = WWW_REPO / "config.toml"
 WWW_CONTENT = WWW_REPO / "content"
 WWW_STATIC = WWW_REPO / "static"
@@ -235,7 +235,7 @@ def normalize_manifest_entry(raw: dict) -> Entry:
 
 
 # ---------------------------------------------------------------------------
-# Auto-walker — discover entries from www.wheelofheaven.io/content/
+# Auto-walker — discover entries from www.wheelofheaven.world/content/
 # ---------------------------------------------------------------------------
 
 _FRONTMATTER_RE = re.compile(r"^\+\+\+\s*\n(.*?)\n\+\+\+\s*\n", re.DOTALL)
