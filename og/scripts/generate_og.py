@@ -170,10 +170,23 @@ class Entry:
 # i18n loader
 # ---------------------------------------------------------------------------
 
-def load_labels() -> dict[str, dict[str, str]]:
-    """Parse config.toml and build LABELS[lang][section] = chip text."""
+def load_labels(strict: bool = True) -> dict[str, dict[str, str]]:
+    """Parse config.toml and build LABELS[lang][section] = chip text.
+
+    With strict=True (default), a missing config.toml is a hard error —
+    chip labels in non-English languages would otherwise silently fall
+    back to English. Pass strict=False for manifest-only runs (--no-walk)
+    where the www repo may not be cloned next to data-images.
+    """
     if not WWW_CONFIG.exists():
-        logging.warning("www config not found at %s — using English fallbacks", WWW_CONFIG)
+        msg = (
+            f"www config not found at {WWW_CONFIG}.\n"
+            f"  Expected www.wheelofheaven.world cloned at {WWW_REPO}.\n"
+            f"  If you are intentionally running manifest-only, pass --no-walk."
+        )
+        if strict:
+            sys.exit(msg)
+        logging.warning("%s — using English fallbacks", msg)
         return {lang: {} for lang in LANGUAGES}
     with open(WWW_CONFIG, "rb") as f:
         cfg = tomllib.load(f)
@@ -301,10 +314,19 @@ _CASCADE_FIELDS = ("author", "publication_year", "original_title", "zodiac_sign"
 
 
 def walk_content() -> list[Entry]:
-    """Discover every published page in every language."""
+    """Discover every published page in every language.
+
+    Caller must check WWW_CONTENT.exists() before invoking when running
+    in auto-walk mode; this function will sys.exit if the dir is missing,
+    so the silent partial-success failure mode (warn + return []) is
+    impossible.
+    """
     if not WWW_CONTENT.exists():
-        logging.warning("www content not found at %s — auto-walk disabled", WWW_CONTENT)
-        return []
+        sys.exit(
+            f"www content not found at {WWW_CONTENT}.\n"
+            f"  Expected www.wheelofheaven.world cloned at {WWW_REPO}.\n"
+            f"  If you are intentionally running manifest-only, pass --no-walk."
+        )
 
     entries: list[Entry] = []
     for path in WWW_CONTENT.rglob("*.md"):
@@ -623,8 +645,10 @@ def main():
     )
 
     # Load translations first — every entry's chip label depends on this.
+    # In auto-walk mode (the default) the www repo must be present;
+    # otherwise non-EN chips would silently fall back to English.
     global LABELS
-    LABELS = load_labels()
+    LABELS = load_labels(strict=not args.no_walk)
 
     manifest = load_manifest(args.manifest)
     manifest_entries = [
@@ -632,7 +656,20 @@ def main():
         if e.get("enabled", True)
     ]
 
-    walked = [] if args.no_walk else walk_content()
+    if args.no_walk:
+        walked = []
+    else:
+        walked = walk_content()
+        # Auto-walk silently returning [] is exactly how the 2026-05 .io→.world
+        # rename broke this pipeline for four days. If we're in auto-walk mode
+        # and got nothing, something is wrong — fail loudly.
+        if not walked:
+            sys.exit(
+                f"Auto-walk of {WWW_CONTENT} discovered 0 entries.\n"
+                f"  Either the content tree is empty (unexpected) or the path\n"
+                f"  is wrong. Aborting rather than rendering a manifest-only\n"
+                f"  subset that would look like a successful run."
+            )
     entries = merge_entries(walked, manifest_entries)
     entries = cascade_from_english(entries)
     entries = filter_entries(entries, args)
