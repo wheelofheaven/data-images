@@ -75,6 +75,26 @@ images:
     quality: 90
     grain_intensity: 0.03
 
+  - filename: "age-of-sagittarius-firmament.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-sagittarius-continent-raising.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-sagittarius-survey.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-sagittarius-first-sunlight.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
   # Conceptual/Artistic images
   - filename: "above-clouds-platform.png"
     quality: 80
