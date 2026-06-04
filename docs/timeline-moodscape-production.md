@@ -43,6 +43,9 @@ age's palette, sit between major arguments, and do not compete with the prose.
 Total target for the twelve age chapters: 57 images. Sagittarius accounts for 4
 completed images, leaving 53 new images after the pilot.
 
+Framing chapters add 12 supporting images outside the zodiac-age sequence,
+bringing full `/timeline/` coverage to 69 images.
+
 Optional second pass: `preamble.md`, `in-the-beginning.md`, and
 `the-wheel-keeps-turning.md`, 2-3 images each.
 
@@ -419,20 +422,97 @@ Palette: cyan, electric blue, clear white, silver, deep indigo, water blue, blac
 
 > Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the two possible Aquarian futures: self-destruction or Golden Age, held in one threshold landscape. Scene/backdrop: a single wide horizon split subtly by light, with one side showing dark indigo industrial clouds, warning lights, and distant ruined infrastructure, and the other side showing cyan-gold gardens, clean laboratories, quiet cities, water channels, and a pale path toward stars. Subject: humanity standing at the threshold between catastrophic failure and mature participation in the creation cycle. Palette: cyan, clear white, warm gold, water blue, silver, deep indigo, black earth, muted green. Composition: very wide 2:1 landscape, contrast integrated naturally, no gore, no mushroom cloud, no superhero apocalypse, no utopian skyline spectacle, no readable text. Style: restrained symbolic matte painting, contemplative, low to medium detail.
 
-## Remaining Chapter Sketches
+## Framing Chapter Addendum
 
-These chapters should be storyboarded in detail after Batch 1 has been reviewed.
+These chapters sit outside the twelve zodiac ages but are part of the rendered
+`/timeline/` reading sequence.
 
-| Chapter | Likely Scene Families |
-| --- | --- |
-| Virgo | oceanic laboratories, first marine life, birds above water, dragons/dinosaurs, the moving world |
-| Leo | land animals, human-design threshold, seven factional teams, Eden garden, Sphinx/Leo memory |
-| Cancer | Eden expulsion, exiled creators, Watchers and human settlements, Nephilim civilization, warning before the flood |
-| Gemini | flood decision, ark preparation, orbital ark, cataclysm and supercontinent break, covenant/rebuild, Tower/war in heaven |
-| Taurus | post-flood civilizations, pardon and return, Cities of the Plain, Abraham test, bull-cult world |
-| Aries | Moses mission, wilderness and Sinai, ark/tabernacle, prophetic kingdoms, axial-age preparation |
-| Pisces | annunciation/conception, Jesus mission, fish-and-virgin signature, Islamic intervention, medieval/scientific transition |
-| Aquarius | nuclear threshold, UN/world government seed, 1973 contact, embassy, two futures/Golden Age |
+### Preamble
+
+Palette: silver, charcoal, moon white, parchment gold, muted cyan, deep blue, soft amber.
+
+| Slug | Placement | Caption | Status |
+| --- | --- | --- | --- |
+| `preamble-recurring-shape` | after "A Shape That Recurs" | Ill. 1 - The recurring shape: many traditions remember a council above the world. | Integrated |
+| `preamble-cross-cultural-pattern` | after "The Pattern Across Traditions" | Ill. 2 - The pattern across traditions: fragments from many cultures converge on one question. | Integrated |
+| `preamble-chaos-polarity` | after "Crichton, Chaos, and the Polarity" | Ill. 3 - The polarity: the maker's confidence answered by the cautionary voice. | Integrated |
+| `preamble-open-door` | after "The Door" | Ill. 4 - The door: the corpus begins as an interpretive threshold. | Integrated |
+
+#### Preamble Prompts
+
+`preamble-recurring-shape`
+
+> Use case: stylized-concept. Asset type: timeline framing chapter moodscape. Primary request: the recurring shape behind the corpus: a prior intelligence, a deliberating council above the world, and life on Earth as the outcome of contested decisions. Scene/backdrop: very wide silver-blue night landscape with Earth below as a dark ocean-and-cloud world, high above it a distant luminous council terrace or orbital chamber implied by silhouettes and lights. Subject: memory of a decision above the world recurring across traditions. Palette: silver, moon white, charcoal, muted cyan, deep blue, soft amber. Composition: very wide 2:1 landscape, figures tiny and anonymous, no throne room, no angels, no halos, no readable symbols, no text. Style: restrained cinematic matte painting, low to medium detail, contemplative and unresolved.
+
+`preamble-cross-cultural-pattern`
+
+> Use case: stylized-concept. Asset type: timeline framing chapter moodscape. Primary request: cross-cultural creation traditions preserving fragments of one structural pattern. Scene/backdrop: wide moonlit archive-landscape where stone tablets, scroll shelves, cave paintings, oceanic carvings, desert stelae, and mountain ritual sites appear as small illuminated fragments across one continuous horizon. Subject: many traditions disagreeing in detail but sharing an underlying shape. Palette: silver, parchment gold, muted cyan, charcoal stone, deep blue night, soft amber lamps. Composition: very wide 2:1 landscape, no readable writing, no literal map, no flags, no giant religious symbols, people tiny or absent. Style: restrained poetic matte painting, low to medium detail, scholarly but atmospheric.
+
+`preamble-chaos-polarity`
+
+> Use case: stylized-concept. Asset type: timeline framing chapter moodscape. Primary request: the Jurassic Park / chaos-theory polarity as a secular mirror of the ancient creator argument. Scene/backdrop: wide silver-charcoal research island or remote laboratory compound at stormy dusk, bio-containment structures, jungle edge, abstract fractal storm patterns in clouds, and two distant human silhouettes facing the facility from opposite sides of a path. Subject: the maker's confidence and the cautionary voice before complex life escapes control. Palette: silver, charcoal, electric rain blue, muted green, soft amber lab light, moon white. Composition: very wide 2:1 landscape, no dinosaurs in close view, no movie references, no gore, no readable monitors, no equations, no text. Style: restrained cinematic concept art, low to medium detail, tense but not action-oriented.
+
+`preamble-open-door`
+
+> Use case: stylized-concept. Asset type: timeline framing chapter moodscape. Primary request: the corpus as an open door into the twelve-age sequence. Scene/backdrop: wide silver dawn interior-exterior threshold, a simple monumental doorway standing open onto a distant cosmic landscape where the zodiacal wheel is suggested by faint lights along a horizon path. Subject: invitation to attention rather than belief, with the reader implied at the threshold. Palette: silver, moon white, soft amber, muted cyan, deep blue, charcoal shadow. Composition: very wide 2:1 landscape, no readable inscriptions, no religious iconography, no literal text, no oversized symbols, no person close-up. Style: restrained symbolic matte painting, quiet and spacious, low to medium detail.
+
+### In the Beginning
+
+Palette: yellow gold, black basalt, deep blue, silver, pale green, amber laboratory light, star white.
+
+| Slug | Placement | Caption | Status |
+| --- | --- | --- | --- |
+| `in-the-beginning-home-civilization` | after "The Civilization Before" | Ill. 1 - The home civilization: a mature world reaches the threshold of creation. | Integrated |
+| `in-the-beginning-synthesis-work` | after "The Synthesis Work" | Ill. 2 - The synthesis work: life assembled in laboratories before the crisis. | Integrated |
+| `in-the-beginning-council-vote` | after "The Vote" | Ill. 3 - The vote: the home world closes the work, but the question remains alive. | Integrated |
+| `in-the-beginning-arrival` | after "The Arrival" | Ill. 4 - The arrival: the relocation expedition reaches the barren Earth. | Integrated |
+
+#### In the Beginning Prompts
+
+`in-the-beginning-home-civilization`
+
+> Use case: stylized-concept. Asset type: timeline framing chapter moodscape. Primary request: the Elohim home civilization before the Earth project, technologically mature and politically organized around a council of long-lived leaders. Scene/backdrop: very wide golden-blue alien home world at dusk, advanced civic terraces embedded in mountains and water, orbital paths faint in the sky, a distant council complex glowing above a city. Subject: a civilization much like ours at a higher stage, reaching the threshold of creation. Palette: yellow gold, deep blue, silver, black basalt, star white, pale green gardens, amber lights. Composition: very wide 2:1 landscape, people tiny, no close faces, no throne room, no readable signage, no text. Style: restrained epic matte painting, low to medium detail, civic and calm.
+
+`in-the-beginning-synthesis-work`
+
+> Use case: stylized-concept. Asset type: timeline framing chapter moodscape. Primary request: the synthesis work on the home planet, where laboratories begin assembling living organisms from non-living materials. Scene/backdrop: wide golden-silver research valley with transparent laboratories, soft bioluminescent tanks, sterile courtyards, and distant institutional buildings under a deep blue sky. Subject: cellular and organismic synthesis becoming ordinary within a mature scientific culture. Palette: amber lab light, silver glass, yellow gold, pale green bioluminescence, deep blue, black basalt shadow. Composition: very wide 2:1 landscape, no close creatures, no horror imagery, no readable screens, no equations, no text. Style: restrained scientific moodscape, low to medium detail, beautiful but uneasy.
+
+`in-the-beginning-council-vote`
+
+> Use case: stylized-concept. Asset type: timeline framing chapter moodscape. Primary request: the Council vote to halt the synthesis work after the breach, with laboratories closing and a political decision becoming irreversible. Scene/backdrop: wide golden-black civic terrace at night overlooking darkened laboratory districts, small council silhouettes in a luminous chamber, sealed research domes below, and transport lights beginning to move toward the horizon. Subject: the conservative vote wins at home while the defeated scientists retain the unresolved question. Palette: yellow gold, black basalt, deep blue, silver, amber windows, cold white. Composition: very wide 2:1 landscape, no violence, no monsters, no close courtroom, no readable documents, no text. Style: restrained political matte painting, solemn and quiet.
+
+`in-the-beginning-arrival`
+
+> Use case: stylized-concept. Asset type: timeline framing chapter moodscape. Primary request: the relocation expedition arriving at a barren early Earth to begin the Capricorn-age surveys. Scene/backdrop: wide golden dawn over lifeless Earth coast or volcanic plain, dark oceans, empty rock, low atmosphere haze, several small survey craft descending, and temporary lights marking future base sites across the land. Subject: seven creation teams arriving at a raw-material world before life begins. Palette: yellow gold dawn, black basalt, deep blue ocean, silver craft light, pale green atmospheric haze, star white. Composition: very wide 2:1 landscape, craft small, no modern city, no existing plants or animals, no flags, no readable markings, no text. Style: restrained cinematic space-historical moodscape, low to medium detail.
+
+### The Wheel Keeps Turning
+
+Palette: lavender, deep indigo, silver, clear white, cyan, warm gold, black, muted green.
+
+| Slug | Placement | Caption | Status |
+| --- | --- | --- | --- |
+| `wheel-keeps-turning-infinity` | after "Infinity" | Ill. 1 - Infinity: worlds within worlds, without first or last scale. | Integrated |
+| `wheel-keeps-turning-lens-synthesis` | after "The Asymmetric Synthesis" | Ill. 2 - The lens: traditions gathered into one asymmetric synthesis. | Integrated |
+| `wheel-keeps-turning-four-levels` | after "The Four Levels" | Ill. 3 - The four levels: self, humanity, creators, and the Infinite held together. | Integrated |
+| `wheel-keeps-turning-future-cycle` | after "The Wheel Keeps Turning" | Ill. 4 - The next turn: humanity prepares to join the cycle of creators. | Integrated |
+
+#### The Wheel Keeps Turning Prompts
+
+`wheel-keeps-turning-infinity`
+
+> Use case: stylized-concept. Asset type: timeline framing chapter moodscape. Primary request: fractal cosmology and infinity, worlds within worlds and scales without top or bottom. Scene/backdrop: very wide lavender-indigo cosmic landscape where a human hand silhouette, a spiral galaxy, an atom-like structure, and tiny planetary systems echo each other recursively in mist and starlight. Subject: infinite self-similar scale, not a scientific diagram. Palette: lavender, deep indigo, silver, clear white, cyan highlights, black space, faint warm gold. Composition: very wide 2:1 landscape, no equations, no labels, no readable text, no literal infographic, no oversized religious symbol. Style: restrained cosmic matte painting, low to medium detail, contemplative and immense.
+
+`wheel-keeps-turning-lens-synthesis`
+
+> Use case: stylized-concept. Asset type: timeline framing chapter moodscape. Primary request: the Raelian lens and asymmetric synthesis of traditions after the twelve-age sweep. Scene/backdrop: wide lavender-silver observatory archive where Hebrew scrolls, Persian firelight, Greek columns, Indian river lamps, desert manuscripts, and modern scientific instruments are arranged as distant illuminated stations around a subtle circular path. Subject: many traditions gathered into an ordered but non-flat synthesis. Palette: lavender, silver, deep indigo, warm gold lamps, muted green, clear white instrument light. Composition: very wide 2:1 landscape, no readable writing, no flags, no giant symbols, no close religious icons, no text. Style: restrained scholarly-cosmic matte painting, low to medium detail.
+
+`wheel-keeps-turning-four-levels`
+
+> Use case: stylized-concept. Asset type: timeline framing chapter moodscape. Primary request: the four levels of meaning: the individual self, human society, the Elohim creators, and the Infinite. Scene/backdrop: wide lavender twilight landscape built as four nested horizons: a lone small figure near water, a distant city of humanity, a higher luminous creator terrace above the clouds, and a vast starfield beyond. Subject: four scales held together without one canceling the others. Palette: lavender, deep indigo, silver, clear white, cyan water, warm gold city lights, black sky. Composition: very wide 2:1 landscape, nested but natural, no diagram rings, no labels, no readable text, no close portrait. Style: restrained symbolic matte painting, contemplative, low to medium detail.
+
+`wheel-keeps-turning-future-cycle`
+
+> Use case: stylized-concept. Asset type: timeline framing chapter moodscape. Primary request: the wheel continuing beyond Aquarius, with humanity preparing to create life on other worlds. Scene/backdrop: wide lavender-gold future horizon with Earth behind, interstellar craft departing, a distant young planet with oceans below, and faint precessional arcs in the sky suggesting the next Great Year. Subject: humanity taking its place in the creator-created cycle, forward into the next turn. Palette: lavender, warm gold, deep indigo, silver craft light, cyan atmosphere, muted green distant world, star white. Composition: very wide 2:1 landscape, no flags, no logos, no readable markings, no triumphalist poster style, no text. Style: restrained hopeful matte painting, low to medium detail, open-ended.
 
 ## Pipeline Checklist
 
