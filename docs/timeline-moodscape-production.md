@@ -36,7 +36,7 @@ age's palette, sit between major arguments, and do not compete with the prose.
 | Age of Cancer | teal | 5 | Integrated |
 | Age of Gemini | blue | 6 | Integrated |
 | Age of Taurus | orange | 5 | Integrated |
-| Age of Aries | pink | 5 | Planned |
+| Age of Aries | pink | 5 | Integrated |
 | Age of Pisces | turquoise | 5 | Planned |
 | Age of Aquarius | cyan | 5 | Planned |
 
@@ -316,6 +316,40 @@ Palette: burnt orange, copper dawn, lapis blue, warm limestone, desert rose, oli
 `age-of-taurus-abraham-test`
 
 > Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: Abraham's loyalty test at the edge of Taurus, shown as a distant mountain scene of assessment and interruption, not as violence. Scene/backdrop: warm orange dawn over a bare highland ridge, a simple stone altar, low shrubs, and a vast empty sky with a faint descending light far above. Subject: two tiny anonymous figures at the altar and a ram-like animal shape caught in a thicket nearby, suggesting the test and its peaceful stop without showing a knife, harm, or close faces. Palette: copper dawn, warm limestone, desert rose, olive scrub, lapis blue shadow, soft white light. Composition: very wide landscape, figures small, silence and tension carried by space, no gore, no child close-up, no religious iconography, no text. Style: restrained historical-concept moodscape, low detail, solemn and humane.
+
+## Batch 7: Aries
+
+Palette: rose pink, desert rose, copper light, warm limestone, indigo night, linen white, black basalt, muted gold.
+
+| Slug | Placement | Caption | Status |
+| --- | --- | --- | --- |
+| `age-of-aries-burning-bush` | after "The Burning Bush and the Mission Briefing" | Ill. 1 - The mission briefing: the direct-contact operation begins in the wilderness. | Integrated |
+| `age-of-aries-wilderness-column` | after "The Plagues, the Departure, and the Wilderness" | Ill. 2 - The departure: a guided people sustained between empire and land. | Integrated |
+| `age-of-aries-sinai-law` | after "Sinai and the Law" | Ill. 3 - Sinai: law descends as public order. | Integrated |
+| `age-of-aries-ark-conquest` | after "The Tabernacle, the Ark, and the Conquest" | Ill. 4 - The Ark: alliance hardware moving with the camp and the campaign. | Integrated |
+| `age-of-aries-axial-preparation` | after "The End of Aries and the Preparation for Pisces" | Ill. 5 - The Axial preparation: many civilizations readied for Pisces. | Integrated |
+
+### Aries Prompts
+
+`age-of-aries-burning-bush`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the burning bush encounter as a mission briefing at the beginning of Aries, with Moses tiny in a desert wilderness and a restrained landing craft illuminating thorn bushes without consuming them. Scene/backdrop: rose-pink Sinai dusk, dry scrub, warm limestone ridges, a small flock far away, and a compact luminous vessel partly veiled by dust and plasma glow. Subject: direct contact resuming with the Eden lineage through Moses, shown as operational encounter rather than religious icon. Palette: rose pink, desert rose, copper light, warm limestone, indigo shadow, linen white. Composition: very wide 2:1 landscape, Moses and animals tiny, craft small and integrated into the terrain, no close faces, no angels, no wings, no halos, no readable symbols. Style: restrained cinematic matte painting, low to medium detail, quiet and uncanny, no text, no diagram.
+
+`age-of-aries-wilderness-column`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the Exodus departure and wilderness support, shown as a long displaced people moving through desert under a pillar-like guidance phenomenon. Scene/backdrop: wide rose-copper desert plain between Egypt and Sinai, distant water or reed sea behind, encampment traces, dawn haze, and an upright cloud-by-day / fire-by-night column at the horizon. Subject: navigation, protection, synthetic food, water, and field support for a dependent population in transit. Palette: dusty pink, copper dawn, warm sand, linen white cloud, indigo distance, muted gold sparks. Composition: very wide landscape, human column tiny and anonymous, no battle, no drowning bodies, no close Pharaoh scene, no literal miracle spectacle, no text. Style: low-detail historical-concept moodscape, atmospheric, sober, technologically ambiguous.
+
+`age-of-aries-sinai-law`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: Mount Sinai as a formal alliance audience where law is given, with a mountain under smoke, light, and controlled distance protocols. Scene/backdrop: rose and indigo mountain valley, Israelite camp far below, summit wrapped in copper-white cloud and furnace-like light, atmospheric shock and dust around a descending craft silhouette. Subject: public awe, security perimeter, and the legal framework entering the culture. Palette: rose pink, black basalt, copper-white light, warm limestone, deep indigo, muted gold. Composition: very wide 2:1 landscape, mountain dominant, camp tiny, no close Moses, no readable tablets or letters, no divine hand, no angels, no halos, no text. Style: restrained cinematic matte painting, serious and monumental but low-detail.
+
+`age-of-aries-ark-conquest`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the Tabernacle, Ark of the Covenant, and early conquest as mobile alliance hardware moving with Israel, shown from a respectful distance. Scene/backdrop: rose-gold desert camp with a compact tabernacle enclosure, distant walled city and river crossing beyond, priests and carriers reduced to tiny silhouettes, faint electromagnetic glow contained inside the sanctuary area. Subject: a dangerous communications and power artifact central to the camp and campaign, with conquest implied through landscape logistics rather than violence. Palette: desert rose, muted gold, warm linen, copper, black basalt shadow, indigo sky. Composition: wide landscape, tabernacle mid-distance, no close artifact detail, no readable symbols, no violence, no collapsing bodies, no religious iconography, no text. Style: atmospheric historical-concept matte painting, low to medium detail, quiet hardware presence.
+
+`age-of-aries-axial-preparation`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the late Aries preparation for Pisces, when prophetic traditions and philosophical civilizations across Eurasia are cultivated in parallel. Scene/backdrop: panoramic rose-indigo twilight joining multiple distant cultural landscapes in one continuous horizon: Jerusalem hills, Persian highlands, Greek coastal city, Indian river plain, Chinese mountain observatory, all suggested by silhouettes rather than detailed monuments. Subject: indirect cultivation after the discovery, many lineages being readied for a pluriform prophetic strategy. Palette: rose pink, indigo night, copper city lights, muted turquoise accents, warm limestone, linen white stars. Composition: very wide 2:1 elevated panorama, no literal map, no borders, no flags, no readable writing, no giant symbols, people tiny or absent. Style: restrained epic matte painting, low to medium detail, contemplative, no infographic, no text.
 
 ## Remaining Chapter Sketches
 
