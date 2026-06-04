@@ -34,7 +34,7 @@ age's palette, sit between major arguments, and do not compete with the prose.
 | Age of Virgo | brown | 5 | Integrated |
 | Age of Leo | yellow | 5 | Integrated |
 | Age of Cancer | teal | 5 | Integrated |
-| Age of Gemini | blue | 6 | Planned |
+| Age of Gemini | blue | 6 | Integrated |
 | Age of Taurus | orange | 5 | Planned |
 | Age of Aries | pink | 5 | Planned |
 | Age of Pisces | turquoise | 5 | Planned |
@@ -243,6 +243,45 @@ Palette: teal, blue-green, wet stone, muted gold, copper light, storm gray, deep
 `age-of-cancer-preflood-world`
 
 > Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the end of Cancer, when the networked pre-flood world has advanced far enough to alarm the home world. Scene/backdrop: panoramic teal supercontinent with connected cities, river routes, coastal lights, distant monumental sites, and storm clouds gathering beyond the horizon. Subject: a civilization at substantial sophistication and political danger, with tiny trade routes, watch fires, and faint orbital or high-sky observation lights implying distant scrutiny. Palette: teal, blue-green, storm gray, wet stone, muted gold city light, cold white sky glints. Composition: very wide 2:1 landscape, elevated viewpoint, no literal map labels, no destruction yet, no flood wave, no modern skyscrapers. Style: restrained epic matte painting, low to medium detail, ominous but quiet, no text, no diagram.
+
+## Batch 5: Gemini
+
+Palette: deep blue, storm blue, cold white, slate, sea green, silver, dark cloud.
+
+| Slug | Placement | Caption | Status |
+| --- | --- | --- | --- |
+| `age-of-gemini-flood-decision` | after "The Decision" | Ill. 1 - The decision: the home world turns from warning to intervention. | Integrated |
+| `age-of-gemini-ark-preparation` | after "The Counter-Preparation: Building the Ark" | Ill. 2 - The ark prepared: preservation work under a darkening sky. | Integrated |
+| `age-of-gemini-orbital-ark` | after "The Genetic Cargo" | Ill. 3 - The orbital refuge: life held above the catastrophe. | Integrated |
+| `age-of-gemini-cataclysm` | after "The Catastrophe" | Ill. 4 - The cataclysm: the waters and the continents remade. | Integrated |
+| `age-of-gemini-covenant` | after "The Recovery and the Covenant" | Ill. 5 - The covenant: the remnant returns to a changed world. | Integrated |
+| `age-of-gemini-war-in-heaven` | after "The War in Heaven" | Ill. 6 - The war in heaven: the last conflict over humanity's future. | Integrated |
+
+### Gemini Prompts
+
+`age-of-gemini-flood-decision`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the opening decision of the Age of Gemini, when the home-world Council turns from warning to catastrophic intervention against the pre-flood civilization. Scene/backdrop: vast high council landscape on a distant advanced world, with cold blue architecture embedded in cliffs above an ocean or cloud plain, tiny decision-makers implied only by lights and silhouettes. Subject: a grieving political decision becoming operational, with distant starward communication beams aimed toward Earth but no readable screens. Palette: deep blue, storm blue, cold white, slate, silver, dark cloud. Composition: very wide 2:1 landscape, architecture and sky dominant, no close faces, no throne room, no religious iconography, no text. Style: restrained cinematic matte painting, low to medium detail, solemn, no spectacle, no diagrams.
+
+`age-of-gemini-ark-preparation`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: Noah's ark prepared as an orbital preservation vessel, built by human and exiled-creator partners under a darkening pre-flood sky. Scene/backdrop: broad blue-gray construction basin on the supercontinent, water channels, scaffolding, preservation facilities, and a sealed vessel integrated into the landscape rather than shaped like a wooden boat. Subject: preservation work under deadline pressure, with tiny anonymous workers, sample convoys, and soft laboratory light. Palette: storm blue, sea green, slate, cold white, muted silver, dark cloud. Composition: very wide landscape, vessel mid-distance, workers small, no close Noah portrait, no animals marching two by two, no text. Style: atmospheric concept art, serious, technical but quiet, no UI overlays, no diagram.
+
+`age-of-gemini-orbital-ark`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the ark as an orbital refuge carrying human survivors and genetic cargo above the flood catastrophe. Scene/backdrop: high orbit over Earth, with the curved planet below partly obscured by storm systems, impact haze, and cold blue atmospheric glow. Subject: a large quiet preservation vessel and a few smaller support craft suspended above the catastrophe, implying life held safe without showing interiors. Palette: deep blue space, storm blue atmosphere, cold white light, slate shadow, silver hull, faint sea green. Composition: very wide 2:1, ark small to medium against the planet, no explosions dominating, no visible suffering, no labels or markings. Style: restrained cinematic space moodscape, low to medium detail, solemn, no text, no diagram.
+
+`age-of-gemini-cataclysm`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the flood cataclysm and shattering of the supercontinent, shown from a distant elevated viewpoint as planetary transformation rather than disaster spectacle. Scene/backdrop: vast blue-black ocean and fractured landmass under storm towers, radiant impact glow far on the horizon, sheets of rain, broken coastlines, and new seas opening through the land. Subject: waters from below and above, continental fragments beginning to separate, the old world being remade. Palette: storm blue, black slate, cold white foam, sea green water, silver lightning, dark cloud. Composition: very wide landscape, no bodies, no cities in close destruction, no gore, no tsunami action-poster framing, no text. Style: atmospheric matte painting, epic but restrained, low to medium detail, geological scale.
+
+`age-of-gemini-covenant`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the post-flood recovery and covenant, with the remnant returning to a reshaped Earth and the bow laid down in the clouds. Scene/backdrop: newly exposed wet highland above receding waters, broken coastlines in the distance, young vegetation returning, cold blue sky clearing after long storms. Subject: tiny human and creator silhouettes gathered near a simple altar or landing site, with a pale rainbow arc in cloud as atmospheric sign rather than religious symbol. Palette: blue, sea green, wet slate, cold white, muted silver, soft gold sunrise. Composition: wide landscape, figures tiny and anonymous, horizon clearing, no close Noah scene, no animals in parade, no divine hand, no text. Style: restrained historical-concept moodscape, quiet recovery, low to medium detail.
+
+`age-of-gemini-war-in-heaven`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the war in heaven after Babel, shown as a distant conflict between advanced factions over Earth and humanity's future, without angelic or demonic imagery. Scene/backdrop: night sky above a dark post-flood mountain and sea landscape, with distant orbital lights, atmospheric contrails, and faint energy flashes high above the clouds. Subject: a conflict moving from political rupture into open war, with the Earthbound alliance below and the home-world Council above implied through position and motion. Palette: deep blue, black slate, cold white, silver, storm violet, faint sea green. Composition: very wide 2:1 landscape, sky dominant, conflict distant, no angels, no demons, no wings, no close combat, no explosions filling the frame, no text. Style: sober cinematic matte painting, low-detail, mythic but technological, no symbols or diagrams.
 
 ## Remaining Chapter Sketches
 
