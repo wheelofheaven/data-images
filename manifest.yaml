@@ -310,6 +310,31 @@ images:
     quality: 85
     grain_intensity: 0.05
 
+  - filename: "age-of-pisces-annunciation.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-pisces-galilee-mission.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-pisces-doubled-signature.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-pisces-islamic-intervention.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-pisces-scientific-threshold.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
   # Conceptual/Artistic images
   - filename: "above-clouds-platform.png"
     quality: 80

@@ -37,7 +37,7 @@ age's palette, sit between major arguments, and do not compete with the prose.
 | Age of Gemini | blue | 6 | Integrated |
 | Age of Taurus | orange | 5 | Integrated |
 | Age of Aries | pink | 5 | Integrated |
-| Age of Pisces | turquoise | 5 | Planned |
+| Age of Pisces | turquoise | 5 | Integrated |
 | Age of Aquarius | cyan | 5 | Planned |
 
 Total target for the twelve age chapters: 57 images. Sagittarius accounts for 4
@@ -350,6 +350,40 @@ Palette: rose pink, desert rose, copper light, warm limestone, indigo night, lin
 `age-of-aries-axial-preparation`
 
 > Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the late Aries preparation for Pisces, when prophetic traditions and philosophical civilizations across Eurasia are cultivated in parallel. Scene/backdrop: panoramic rose-indigo twilight joining multiple distant cultural landscapes in one continuous horizon: Jerusalem hills, Persian highlands, Greek coastal city, Indian river plain, Chinese mountain observatory, all suggested by silhouettes rather than detailed monuments. Subject: indirect cultivation after the discovery, many lineages being readied for a pluriform prophetic strategy. Palette: rose pink, indigo night, copper city lights, muted turquoise accents, warm limestone, linen white stars. Composition: very wide 2:1 elevated panorama, no literal map, no borders, no flags, no readable writing, no giant symbols, people tiny or absent. Style: restrained epic matte painting, low to medium detail, contemplative, no infographic, no text.
+
+## Batch 8: Pisces
+
+Palette: turquoise, sea green, pearl white, warm gold, Levant sand, deep indigo, soft coral.
+
+| Slug | Placement | Caption | Status |
+| --- | --- | --- | --- |
+| `age-of-pisces-annunciation` | after "The Preparation and the Conception" | Ill. 1 - The conception: the Piscean intervention enters a human household. | Integrated |
+| `age-of-pisces-galilee-mission` | after "The Scientific Miracles and the Cosmic-Competition Teaching" | Ill. 2 - The mission: fishers and parables carry the hidden teaching. | Integrated |
+| `age-of-pisces-doubled-signature` | after "The Commission and the Fish-and-Virgin Signature" | Ill. 3 - The doubled signature: fish and virgin preserve the age's memory. | Integrated |
+| `age-of-pisces-islamic-intervention` | after "Islam and the Question of Its Origin" | Ill. 4 - The Islamic intervention: the message takes a second Piscean route. | Integrated |
+| `age-of-pisces-scientific-threshold` | after "The Signs of the End" | Ill. 5 - The threshold: science brings Pisces to the edge of Aquarius. | Integrated |
+
+### Pisces Prompts
+
+`age-of-pisces-annunciation`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the Piscean conception operation in Nazareth, shown as a quiet human household under restrained alliance presence rather than a religious annunciation icon. Scene/backdrop: turquoise-blue Galilean night, limestone village terraces, small courtyard, olive trees, distant hills, a compact pearl-white light or craft high above casting a soft beam into one humble house. Subject: the final direct intervention entering a human household through Mary and Joseph's managed social world. Palette: turquoise, pearl white, warm gold window light, Levant sand, deep indigo, soft coral shadow. Composition: very wide 2:1 landscape, people tiny or implied inside the lit house, no close Mary, no pregnancy scene, no angel wings, no halos, no divine hand, no readable text, no crosses. Style: restrained cinematic matte painting, low to medium detail, tender but operational.
+
+`age-of-pisces-galilee-mission`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: Jesus's Galilean mission as a landscape of fishermen, teaching, scientific miracles, and the hidden cosmic-competition parable. Scene/backdrop: turquoise dawn over the Sea of Galilee, small fishing boats, shore fields, scattered listeners, and a faint luminous disturbance on the water far from shore. Subject: fishers becoming messengers and parables carrying the deeper teaching about created worlds. Palette: turquoise water, sea green fields, pearl mist, warm gold sunrise, indigo shadows, soft coral sky. Composition: very wide 2:1 landscape, figures tiny and anonymous, lake and fields sharing the frame, no close Jesus portrait, no halos, no cross, no literal fish symbol, no readable text, no spectacle. Style: quiet historical-concept moodscape, atmospheric and humane.
+
+`age-of-pisces-doubled-signature`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the fish-and-virgin doubled signature of Pisces, shown as cultural memory distributed through landscape rather than as a church icon. Scene/backdrop: turquoise coastal monastery garden at twilight, shallow water with small fish glints, a distant white-veiled woman silhouette crossing a terrace, fishermen's nets drying near stone steps, stars just appearing above the sea. Subject: Pisces and Virgo encoded together in the age's Christian memory without literal zodiac diagrams. Palette: turquoise, pearl white, sea green, muted gold lamps, indigo sky, soft coral stone. Composition: very wide 2:1 landscape, woman and fishermen tiny, no Madonna icon, no halo, no crescent, no church cross, no readable symbols, no text. Style: restrained poetic matte painting, low to medium detail, symbolic but not illustrative.
+
+`age-of-pisces-islamic-intervention`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the Islamic intervention as a second Piscean route for the message, with the Petra/Levantine question kept atmospheric rather than diagrammatic. Scene/backdrop: turquoise night over a sandstone canyon city and desert trade routes, early prayer courtyard silhouettes, caravan lights, distant observatory-like high place, and stars reflected in water channels. Subject: a new prophetic transmission emerging from the Jewish-Christian-Arabic cultural matrix and spreading across routes. Palette: turquoise night, sea-green shadow, rose sandstone, pearl star light, warm gold lamps, deep indigo. Composition: very wide 2:1 landscape, no close Muhammad depiction, no faces, no readable Arabic, no crescent emblem, no flags, no map arrows, no text. Style: sober historical-concept moodscape, low to medium detail, reverent but non-iconic.
+
+`age-of-pisces-scientific-threshold`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the end of Pisces, when medieval religious worlds give way to humanity's own scientific maturity and the Aquarian threshold appears. Scene/backdrop: wide turquoise-to-indigo panorama blending observatory domes, manuscript rooms, early laboratories, telescope silhouettes, Dead Sea cave openings, a distant city of 1940s lights, and a pale rocket-like trail near the horizon. Subject: independent scientific development reaching the threshold marked by 1946, Israel's restoration, and renewed contact. Palette: turquoise, cyan-white instrument light, warm gold, deep indigo, stone gray, soft coral dawn. Composition: very wide 2:1 landscape, no mushroom cloud, no national flags, no UN logo, no readable papers, no equations, no text, no crowded modern skyline. Style: restrained epic matte painting, contemplative transition from old age to new.
 
 ## Remaining Chapter Sketches
 
