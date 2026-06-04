@@ -33,7 +33,7 @@ age's palette, sit between major arguments, and do not compete with the prose.
 | Age of Libra | green | 4 | Integrated |
 | Age of Virgo | brown | 5 | Integrated |
 | Age of Leo | yellow | 5 | Integrated |
-| Age of Cancer | teal | 5 | Planned |
+| Age of Cancer | teal | 5 | Integrated |
 | Age of Gemini | blue | 6 | Planned |
 | Age of Taurus | orange | 5 | Planned |
 | Age of Aries | pink | 5 | Planned |
@@ -209,6 +209,40 @@ Palette: yellow, gold, dry green, warm stone, deep shadow, pale sky.
 `age-of-leo-sphinx`
 
 > Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the Sphinx as a monument of the Age of Leo, facing the equinoctial sunrise and the constellation Leo in the deep past. Scene/backdrop: early wet North African plateau before full desertification, golden dawn, distant humid green along the horizon, a newly carved lion-bodied monument facing east. Subject: the Sphinx as stone memory of the lion age and the human creation, with sky alignment implied atmospherically rather than diagrammed. Palette: gold, pale limestone, yellow dawn, muted green, blue-gray pre-dawn shadow. Composition: very wide landscape, monument mid-distance and dignified, sun low on horizon, no pyramids dominating, no modern ruins, no labels, no constellation lines. Style: restrained historical-concept matte painting, serious, no text, no tourist postcard.
+
+## Batch 4: Cancer
+
+Palette: teal, blue-green, wet stone, muted gold, copper light, storm gray, deep shadow.
+
+| Slug | Placement | Caption | Status |
+| --- | --- | --- | --- |
+| `age-of-cancer-awakening` | after "The Awakening" | Ill. 1 - The awakening: forbidden knowledge crossing from makers to made. | Integrated |
+| `age-of-cancer-expulsion` | after "The Expulsion and the Settlement" | Ill. 2 - The expulsion: the garden sealed and the exiles left on Earth. | Integrated |
+| `age-of-cancer-long-generations` | after "The Tree of Life and the Long Generations" | Ill. 3 - The long generations: patriarchs and cities growing under borrowed longevity. | Integrated |
+| `age-of-cancer-watchers` | after "The Sons of Elohim and the Daughters of Men" | Ill. 4 - The Watchers: descended teachers among the human settlements. | Integrated |
+| `age-of-cancer-preflood-world` | after "The Broader World" | Ill. 5 - The pre-flood world: a networked civilization approaching the threshold. | Integrated |
+
+### Cancer Prompts
+
+`age-of-cancer-awakening`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the Age of Cancer awakening, when forbidden knowledge passes from the disclosing creators to the first humans. Scene/backdrop: teal twilight garden-laboratory at the edge of water channels and dense trees, with distant translucent research architecture half-hidden among foliage. Subject: a small group of indistinct human figures in the middle distance facing a calm luminous teaching presence or opened archive of light; the knowledge transfer is atmospheric, not literal. Palette: teal, blue-green, wet stone, muted gold, soft copper light, deep shadow. Composition: very wide 2:1 landscape, figures tiny and anonymous, environment dominant, no close faces, no nudity, no serpent animal, no religious iconography. Style: restrained cinematic matte painting, low to medium detail, serious and humane, no text, no diagram.
+
+`age-of-cancer-expulsion`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the Eden expulsion and political settlement at the start of Cancer, with the garden sealed and the dissident creators left on Earth. Scene/backdrop: wet teal dawn outside a walled garden valley, with a sealed luminous gate, mist, trees, and distant water. Subject: two or three tiny human silhouettes walking away from the garden while several distant exiled creator figures remain outside the perimeter; guardian lights at the gate imply armed sentries without showing combat. Palette: teal, blue-green, storm gray, wet stone, muted gold, copper highlights. Composition: very wide landscape, gate off-center, exiles and humans small, strong sense of separation and consequence, no angels, no wings, no demons, no flaming sword close-up. Style: sober historical-concept matte painting, low to medium detail, no text, no symbol.
+
+`age-of-cancer-long-generations`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the long generations after Eden, with patriarchal leaders and early city life developing under limited tree-of-life longevity. Scene/backdrop: early pre-flood settlement on a teal river plain, stone terraces, cultivated fields, workshops, small herds, and water channels under a low luminous sky. Subject: one distant elder-leader figure on a terrace overlooking younger generations building, farming, and trading below; longevity suggested by continuity and scale, not by medical imagery. Palette: teal water, blue-green vegetation, wet limestone, muted gold lamps, copper dusk. Composition: wide landscape with settlement layers receding into distance, people tiny and generalized, no portraits, no biblical costume drama. Style: restrained matte painting, low to medium detail, no text, no diagram.
+
+`age-of-cancer-watchers`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the Watchers and Nephilim period, showing descended teachers among human settlements without literalizing sexual relationships or racial claims. Scene/backdrop: teal nightfall over a growing pre-flood city, with workshops, observatory terraces, and water-lit streets. Subject: tall but distant teacher figures among human groups, demonstrating metallurgy, astronomy, and writing through glowing tools and sky observation; hybrid legacy implied by scale and civic presence, not by close bodies. Palette: dark teal, blue-green, copper firelight, muted gold, stone gray, deep shadow. Composition: very wide cityscape, figures small and respectful, no intimacy, no violence, no giant monster imagery, no wings, no halos, no demons. Style: serious cinematic concept art, low to medium detail, no text, no symbols.
+
+`age-of-cancer-preflood-world`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the end of Cancer, when the networked pre-flood world has advanced far enough to alarm the home world. Scene/backdrop: panoramic teal supercontinent with connected cities, river routes, coastal lights, distant monumental sites, and storm clouds gathering beyond the horizon. Subject: a civilization at substantial sophistication and political danger, with tiny trade routes, watch fires, and faint orbital or high-sky observation lights implying distant scrutiny. Palette: teal, blue-green, storm gray, wet stone, muted gold city light, cold white sky glints. Composition: very wide 2:1 landscape, elevated viewpoint, no literal map labels, no destruction yet, no flood wave, no modern skyscrapers. Style: restrained epic matte painting, low to medium detail, ominous but quiet, no text, no diagram.
 
 ## Remaining Chapter Sketches
 

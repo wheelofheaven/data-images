@@ -205,6 +205,31 @@ images:
     quality: 85
     grain_intensity: 0.05
 
+  - filename: "age-of-cancer-awakening.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-cancer-expulsion.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-cancer-long-generations.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-cancer-watchers.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-cancer-preflood-world.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
   # Conceptual/Artistic images
   - filename: "above-clouds-platform.png"
     quality: 80
