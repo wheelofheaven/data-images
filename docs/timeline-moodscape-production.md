@@ -32,7 +32,7 @@ age's palette, sit between major arguments, and do not compete with the prose.
 | Age of Scorpio | red | 4 | Integrated |
 | Age of Libra | green | 4 | Integrated |
 | Age of Virgo | brown | 5 | Integrated |
-| Age of Leo | yellow | 5 | Planned |
+| Age of Leo | yellow | 5 | Integrated |
 | Age of Cancer | teal | 5 | Planned |
 | Age of Gemini | blue | 6 | Planned |
 | Age of Taurus | orange | 5 | Planned |
@@ -175,6 +175,40 @@ Palette: brown, umber, wet green, ocean blue, amber light, bone white.
 `age-of-virgo-garden-of-forms`
 
 > Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the end of Virgo, with a fully moving biosphere balanced across water, air, and land. Scene/backdrop: panoramic coastline where ocean, wet forest, open plain, and sky meet in one continuous ecological landscape. Subject: abundant animal life as quiet distributed presence: fish in water, birds in air, distant reptilian forms on land, all integrated into a designed ecosystem. Palette: rich brown, wet green, ocean blue, amber sun, pale bone highlights. Composition: very wide layered landscape, no single dominant creature, movement everywhere but calm, a sense of ecological balance. Style: restrained matte painting, low to medium detail, no text, no diagram, no crowded wildlife documentary look.
+
+## Batch 3: Leo
+
+Palette: yellow, gold, dry green, warm stone, deep shadow, pale sky.
+
+| Slug | Placement | Caption | Status |
+| --- | --- | --- | --- |
+| `age-of-leo-land-animals` | after "The Land Animals" | Ill. 1 - The land animals: herbivores and carnivores completing the terrestrial web. | Integrated |
+| `age-of-leo-human-threshold` | after "From Primate to Human" | Ill. 2 - The human threshold: the primate template brought to the mirror. | Integrated |
+| `age-of-leo-seven-teams` | after "The Factional Teams and the Seven Races" | Ill. 3 - The seven teams: one template shaped through seven provincial traditions. | Integrated |
+| `age-of-leo-eden` | after "The Most Talented Team" | Ill. 4 - Eden: the most accomplished garden of the age. | Integrated |
+| `age-of-leo-sphinx` | after "The Sphinx: A Monument of the Age" | Ill. 5 - The Sphinx: the lion age remembered in stone and sky. | Integrated |
+
+### Leo Prompts
+
+`age-of-leo-land-animals`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the early Age of Leo, when land animals complete the terrestrial food web after the world of Virgo. Scene/backdrop: golden supercontinent plain with dry green vegetation, scattered trees, distant water, and warm low sunlight. Subject: herbivore herds in the middle distance and a few carnivore silhouettes far away, all calm and ecologically balanced rather than predatory. Palette: yellow, gold, dry green, warm stone, deep shadow, pale sky. Composition: very wide 2:1 landscape, animals distributed quietly across the plain, no close animal portrait, no violence. Style: restrained cinematic matte painting, low to medium detail, no text, no symbols, no diagram.
+
+`age-of-leo-human-threshold`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the threshold from advanced primate template to human design, shown as a quiet research landscape rather than a literal laboratory diagram. Scene/backdrop: warm golden highland research terrace with distant translucent work chambers, trees, and pale sky. Subject: a small group of indistinct human-like silhouettes seen from far away near a reflective pool or polished stone surface, suggesting the mirror idea without showing faces or specific races. Palette: gold, ochre, warm stone, dry green, soft white light. Composition: wide landscape with the figures tiny and anonymous, the environment dominant, no close bodies, no nudity, no medical scene. Style: atmospheric concept art, serious, humane, no text, no diagrams, no UI overlays.
+
+`age-of-leo-seven-teams`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: seven factional creator teams working in parallel across the supercontinent, without depicting racial hierarchy or close human differences. Scene/backdrop: wide aerial view of a golden continental landscape divided by rivers, ridges, forests, and plains, with seven small research sites glowing faintly in different regions. Subject: one shared human-design template expressed through seven provincial scientific traditions, represented by the seven sites rather than close people. Palette: yellow gold, dry green, slate shadow, pale blue sky, subtle varied accent lights. Composition: very wide map-like landscape but not a literal map, seven sites visible as tiny lights, no symbols, no text, no flags. Style: restrained matte painting, low-detail, contemplative, no infographic.
+
+`age-of-leo-eden`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the Garden of Eden as the most accomplished biological garden of Leo, created by the talented team in the region later remembered as Israel. Scene/backdrop: fragrant golden garden valley with water channels, flowering trees, lush plants, warm stone terraces, and distant research architecture integrated into the landscape. Subject: paradise as a designed living environment, with beauty, order, and intelligence implied; no close Adam and Eve scene. Palette: yellow gold, honey, fresh green, warm limestone, soft blue shadow. Composition: wide landscape, garden paths and water lead the eye inward, one or two tiny distant human silhouettes only for scale. Style: poetic cinematic concept art, low to medium detail, no fantasy palace, no religious iconography, no text.
+
+`age-of-leo-sphinx`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the Sphinx as a monument of the Age of Leo, facing the equinoctial sunrise and the constellation Leo in the deep past. Scene/backdrop: early wet North African plateau before full desertification, golden dawn, distant humid green along the horizon, a newly carved lion-bodied monument facing east. Subject: the Sphinx as stone memory of the lion age and the human creation, with sky alignment implied atmospherically rather than diagrammed. Palette: gold, pale limestone, yellow dawn, muted green, blue-gray pre-dawn shadow. Composition: very wide landscape, monument mid-distance and dignified, sun low on horizon, no pyramids dominating, no modern ruins, no labels, no constellation lines. Style: restrained historical-concept matte painting, serious, no text, no tourist postcard.
 
 ## Remaining Chapter Sketches
 

@@ -180,6 +180,31 @@ images:
     quality: 85
     grain_intensity: 0.05
 
+  - filename: "age-of-leo-land-animals.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-leo-human-threshold.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-leo-seven-teams.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-leo-eden.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-leo-sphinx.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
   # Conceptual/Artistic images
   - filename: "above-clouds-platform.png"
     quality: 80
