@@ -38,7 +38,7 @@ age's palette, sit between major arguments, and do not compete with the prose.
 | Age of Taurus | orange | 5 | Integrated |
 | Age of Aries | pink | 5 | Integrated |
 | Age of Pisces | turquoise | 5 | Integrated |
-| Age of Aquarius | cyan | 5 | Planned |
+| Age of Aquarius | cyan | 5 | Integrated |
 
 Total target for the twelve age chapters: 57 images. Sagittarius accounts for 4
 completed images, leaving 53 new images after the pilot.
@@ -384,6 +384,40 @@ Palette: turquoise, sea green, pearl white, warm gold, Levant sand, deep indigo,
 `age-of-pisces-scientific-threshold`
 
 > Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the end of Pisces, when medieval religious worlds give way to humanity's own scientific maturity and the Aquarian threshold appears. Scene/backdrop: wide turquoise-to-indigo panorama blending observatory domes, manuscript rooms, early laboratories, telescope silhouettes, Dead Sea cave openings, a distant city of 1940s lights, and a pale rocket-like trail near the horizon. Subject: independent scientific development reaching the threshold marked by 1946, Israel's restoration, and renewed contact. Palette: turquoise, cyan-white instrument light, warm gold, deep indigo, stone gray, soft coral dawn. Composition: very wide 2:1 landscape, no mushroom cloud, no national flags, no UN logo, no readable papers, no equations, no text, no crowded modern skyline. Style: restrained epic matte painting, contemplative transition from old age to new.
+
+## Batch 9: Aquarius
+
+Palette: cyan, electric blue, clear white, silver, deep indigo, water blue, black earth, warm gold.
+
+| Slug | Placement | Caption | Status |
+| --- | --- | --- | --- |
+| `age-of-aquarius-nuclear-threshold` | after "1946: The First Year of the New Era" | Ill. 1 - The threshold: humanity reaches powers once reserved for its makers. | Integrated |
+| `age-of-aquarius-rael-contact` | after "1973: The Contact" | Ill. 2 - The contact: the Aquarian disclosure begins at Puy-de-Lassolas. | Integrated |
+| `age-of-aquarius-world-government-seed` | after "The New Commandments" | Ill. 3 - The seed of world government: one planet beginning to imagine one polity. | Integrated |
+| `age-of-aquarius-embassy` | after "The Embassy and the Third Temple" | Ill. 4 - The embassy: a place prepared for the return of the creators. | Integrated |
+| `age-of-aquarius-two-futures` | after "The Two Futures and the Golden Age" | Ill. 5 - The two futures: golden age or self-destruction at the threshold. | Integrated |
+
+### Aquarius Prompts
+
+`age-of-aquarius-nuclear-threshold`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the 1945-1946 Aquarian threshold, when humanity acquires atomic power and the age opens. Scene/backdrop: very wide cyan-indigo night desert plain with distant test towers, a restrained white-blue horizon flash far away, observatory silhouettes, early computing rooms suggested by small window grids, and a faint water-bearer stream of light crossing the sky. Subject: civilizational maturity and danger at the crossing from Pisces into Aquarius, shown as threshold rather than catastrophe. Palette: cyan, electric blue, clear white, silver, deep indigo, black earth, faint warm gold. Composition: very wide 2:1 landscape, flash small and distant, no mushroom cloud, no bodies, no city destruction, no flags, no readable documents, no equations, no text. Style: restrained cinematic matte painting, low to medium detail, sober, luminous, not an action scene.
+
+`age-of-aquarius-world-government-seed`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the seed of world government in the Aquarian age, from the United Nations and global institutions toward a single planetary coordination. Scene/backdrop: wide cyan dawn over a circular international assembly landscape beside water, many small delegations approaching through bridges and river-like paths, Earth suggested as a pale reflected globe in a pool or sky but no actual logo. Subject: nations beginning to flow toward one coordinating center, the political water imagery of Aquarius. Palette: cyan, water blue, clear white, silver architecture, deep indigo shadows, warm gold interior lights, muted green land. Composition: very wide 2:1 landscape, people tiny and anonymous, no UN emblem, no national flags, no readable placards, no map labels, no text. Style: quiet civic matte painting, optimistic but restrained, low to medium detail.
+
+`age-of-aquarius-rael-contact`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the December 1973 contact at Puy-de-Lassolas, when the Aquarian disclosure begins in an extinct volcanic crater in France. Scene/backdrop: cold cyan winter morning in the Auvergne, dark volcanic crater bowl, frost on grass and basalt, low mist, and a small silent metallic craft descended into the crater. Subject: a single ordinary human figure at great distance receiving contact from a small humanoid emissary, with the encounter quiet and operational rather than sensational. Palette: cyan mist, silver craft light, deep indigo volcanic shadow, black basalt, clear white frost, faint warm gold horizon. Composition: very wide 2:1 landscape, figures tiny, no close portrait of Rael, no readable symbols, no UFO poster drama, no beams hitting faces, no text. Style: restrained historical-concept matte painting, uncanny and quiet, low to medium detail.
+
+`age-of-aquarius-embassy`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the embassy for the Elohim as the Aquarian Third Temple, a diplomatic and scientific center prepared for open return. Scene/backdrop: wide cyan-white coastal or desert-edge site at dawn, a low futuristic embassy complex within a discreet circular boundary, water channels flowing outward, landing platform, gardens, and distant pilgrimage roads approaching from several directions. Subject: a prepared place where the water of understanding flows from the threshold into the world. Palette: cyan, clear white, silver, water blue, warm gold windows, pale stone, deep indigo shade, muted green gardens. Composition: very wide 2:1 landscape, architecture integrated into terrain, no giant religious monument, no flags, no logos, no readable signage, no crowd closeups, no text. Style: restrained architectural moodscape, clean and contemplative, low to medium detail.
+
+`age-of-aquarius-two-futures`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the two possible Aquarian futures: self-destruction or Golden Age, held in one threshold landscape. Scene/backdrop: a single wide horizon split subtly by light, with one side showing dark indigo industrial clouds, warning lights, and distant ruined infrastructure, and the other side showing cyan-gold gardens, clean laboratories, quiet cities, water channels, and a pale path toward stars. Subject: humanity standing at the threshold between catastrophic failure and mature participation in the creation cycle. Palette: cyan, clear white, warm gold, water blue, silver, deep indigo, black earth, muted green. Composition: very wide 2:1 landscape, contrast integrated naturally, no gore, no mushroom cloud, no superhero apocalypse, no utopian skyline spectacle, no readable text. Style: restrained symbolic matte painting, contemplative, low to medium detail.
 
 ## Remaining Chapter Sketches
 
