@@ -31,7 +31,7 @@ age's palette, sit between major arguments, and do not compete with the prose.
 | Age of Sagittarius | blue | 4 | Done |
 | Age of Scorpio | red | 4 | Integrated |
 | Age of Libra | green | 4 | Integrated |
-| Age of Virgo | brown | 5 | Planned |
+| Age of Virgo | brown | 5 | Integrated |
 | Age of Leo | yellow | 5 | Planned |
 | Age of Cancer | teal | 5 | Planned |
 | Age of Gemini | blue | 6 | Planned |
@@ -141,6 +141,40 @@ Palette: green, jade, night blue, white star light, soft gold.
 `age-of-libra-sky-ground`
 
 > Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the end of Libra, with sky and ground balanced: mature green groundcover below, precise celestial order above. Scene/backdrop: expansive living plain with observatory silhouettes, clear sky with moon and stars, first hint of seasonal variation. Subject: astronomy and biosphere brought into operational balance. Palette: rich green, night blue, white star light, soft gold. Composition: symmetrical but natural, low horizon, sky and ground equally weighted. Style: quiet cinematic matte painting, no text, no scales symbol, no diagram.
+
+## Batch 2: Virgo
+
+Palette: brown, umber, wet green, ocean blue, amber light, bone white.
+
+| Slug | Placement | Caption | Status |
+| --- | --- | --- | --- |
+| `age-of-virgo-moving-world` | after Section I introduction | Ill. 1 - The moving world: the first visible animals entering sea, sky, and land. | Integrated |
+| `age-of-virgo-oceanic-labs` | after "The Oceanic Laboratories" | Ill. 2 - The oceanic laboratories: aquatic life seeded through the one ocean. | Integrated |
+| `age-of-virgo-birds` | after "The Air" | Ill. 3 - The birds: aesthetic excess taking flight across the firmament. | Integrated |
+| `age-of-virgo-dragons` | after "The Dragons" | Ill. 4 - The dragons: formidable forms released by particular teams. | Integrated |
+| `age-of-virgo-garden-of-forms` | near "What Virgo Is" | Ill. 5 - The garden of forms: a moving biosphere balanced across water, air, and land. | Integrated |
+
+### Virgo Prompts
+
+`age-of-virgo-moving-world`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the opening of the Age of Virgo, when the quiet plant world becomes visibly animate for the first time. Scene/backdrop: a broad young supercontinent coastline with dark soil, low forests, shallow water, and open sky. Subject: first macro-animals entering the visible world, suggested by small fish breaking the water, distant bird silhouettes, and faint reptilian movement far inland. Palette: brown, umber, wet green, ocean blue, amber light, bone white. Composition: very wide landscape, low to medium detail, no close animals, no spectacle, movement implied through spacing and silhouettes. Style: restrained cinematic matte painting, atmospheric, no text, no symbols, no diagrams.
+
+`age-of-virgo-oceanic-labs`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: distributed aquatic laboratories seeding the first visible marine food web into the one ocean. Scene/backdrop: calm brown-green coastline and blue ocean with a few floating or partly submerged research platforms, faint underwater glow, early kelp beds, and small schools of fish in the shallows. Subject: plankton, small fish, and larger fish being introduced in a staged ecological program. Palette: umber coast, dark teal water, muted green, amber lab light, pale foam. Composition: wide coastal view, labs small and integrated into the seascape, no close scientists, no UI overlays, no text. Style: low-detail concept art, quiet engineering mood, ecological rather than industrial.
+
+`age-of-virgo-birds`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the first birds filling the air, with beauty and display entering animal design through artist pressure. Scene/backdrop: warm brown cliffs and wet green forest edge beneath a clear amber sky, distant release terraces or aviary structures integrated into the terrain. Subject: colorful birds in flight and courtship motion, seen mostly as silhouettes and soft color marks rather than detailed specimens. Palette: brown, amber, wet green, cream, muted red and blue accents. Composition: sky-dominant wide landscape with many tiny bird forms, no close faces, no decorative pattern overload. Style: atmospheric matte painting, poetic but restrained, no fantasy creatures, no text.
+
+`age-of-virgo-dragons`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the creation of the great tanninim, dragons or dinosaurs, shown as a troubling but majestic landscape rather than a monster scene. Scene/backdrop: vast umber plain with low vegetation, humid haze, distant laboratory outposts, and enormous reptilian silhouettes moving far away. Subject: formidable dinosaur-like forms released by particular factional teams, implying scale and political risk without violence. Palette: dark brown, red umber, bone white haze, black-green vegetation, muted gold. Composition: low horizon, animals distant and partly obscured by dust or mist, one tiny outpost for scale, no close teeth, no chase, no gore. Style: cinematic concept art, low-detail, serious, no Jurassic action-poster composition, no text.
+
+`age-of-virgo-garden-of-forms`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the end of Virgo, with a fully moving biosphere balanced across water, air, and land. Scene/backdrop: panoramic coastline where ocean, wet forest, open plain, and sky meet in one continuous ecological landscape. Subject: abundant animal life as quiet distributed presence: fish in water, birds in air, distant reptilian forms on land, all integrated into a designed ecosystem. Palette: rich brown, wet green, ocean blue, amber sun, pale bone highlights. Composition: very wide layered landscape, no single dominant creature, movement everywhere but calm, a sense of ecological balance. Style: restrained matte painting, low to medium detail, no text, no diagram, no crowded wildlife documentary look.
 
 ## Remaining Chapter Sketches
 
