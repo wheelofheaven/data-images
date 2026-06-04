@@ -35,7 +35,7 @@ age's palette, sit between major arguments, and do not compete with the prose.
 | Age of Leo | yellow | 5 | Integrated |
 | Age of Cancer | teal | 5 | Integrated |
 | Age of Gemini | blue | 6 | Integrated |
-| Age of Taurus | orange | 5 | Planned |
+| Age of Taurus | orange | 5 | Integrated |
 | Age of Aries | pink | 5 | Planned |
 | Age of Pisces | turquoise | 5 | Planned |
 | Age of Aquarius | cyan | 5 | Planned |
@@ -282,6 +282,40 @@ Palette: deep blue, storm blue, cold white, slate, sea green, silver, dark cloud
 `age-of-gemini-war-in-heaven`
 
 > Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the war in heaven after Babel, shown as a distant conflict between advanced factions over Earth and humanity's future, without angelic or demonic imagery. Scene/backdrop: night sky above a dark post-flood mountain and sea landscape, with distant orbital lights, atmospheric contrails, and faint energy flashes high above the clouds. Subject: a conflict moving from political rupture into open war, with the Earthbound alliance below and the home-world Council above implied through position and motion. Palette: deep blue, black slate, cold white, silver, storm violet, faint sea green. Composition: very wide 2:1 landscape, sky dominant, conflict distant, no angels, no demons, no wings, no close combat, no explosions filling the frame, no text. Style: sober cinematic matte painting, low-detail, mythic but technological, no symbols or diagrams.
+
+## Batch 6: Taurus
+
+Palette: burnt orange, copper dawn, lapis blue, warm limestone, desert rose, olive green, black basalt, salt white.
+
+| Slug | Placement | Caption | Status |
+| --- | --- | --- | --- |
+| `age-of-taurus-pardon` | after "The Pardon and the Long Quiet" | Ill. 1 - The pardon: the exiles return to plead humanity's case. | Integrated |
+| `age-of-taurus-bull-civilizations` | after "The Rise of the Post-Flood Civilizations" | Ill. 2 - The Taurean world: post-flood civilizations rising under the sign of the bull. | Integrated |
+| `age-of-taurus-cities-plain` | after "The Humans Alone, the Cities of the Plain" | Ill. 3 - The Cities of the Plain: inheritance gathering into a dangerous project. | Integrated |
+| `age-of-taurus-dead-sea-strike` | after "The Two Scouts, the Strike, and the Dead Sea" | Ill. 4 - The strike: the fertile plain overturned into salt and silence. | Integrated |
+| `age-of-taurus-abraham-test` | after "Abraham at the Edge" | Ill. 5 - The test: Abraham's lineage verified for the recovery program. | Integrated |
+
+### Taurus Prompts
+
+`age-of-taurus-pardon`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the pardon at the beginning of the Age of Taurus, with the exiled creators returning to the home world to plead humanity's case. Scene/backdrop: an advanced home-world civic landscape at copper dawn, broad terraces, ocean or cloud plain below, and distant assemblies watching a small delegation arrive. Subject: return from exile and public advocacy for Earth, with Earth suggested as a small blue point or holographic globe in the distance but no readable display. Palette: burnt orange, copper dawn, lapis blue, warm limestone, silver, soft cloud white. Composition: very wide 2:1 landscape, figures tiny and anonymous, architecture embedded in landscape, no throne room, no close faces, no religious iconography, no text. Style: restrained cinematic matte painting, low to medium detail, political and quiet rather than triumphant.
+
+`age-of-taurus-bull-civilizations`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the post-flood civilizations of Taurus rising across river valleys and trade routes under the cultural sign of the bull. Scene/backdrop: wide elevated view joining several early Bronze Age landscapes in one continuous panorama: river city terraces, distant pyramid-like monuments, fields, herds, boats, and trade caravans. Subject: civilizational recovery and bull-age symbolism, with bull forms present only as distant herds, carved horn shapes, or small ritual silhouettes, not as a giant symbol. Palette: burnt orange sky, olive green fields, lapis blue water, warm limestone, desert rose, black basalt shadows. Composition: very wide 2:1, multiple centers connected by routes, people tiny, no literal map labels, no flags, no readable marks. Style: atmospheric historical-concept matte painting, low to medium detail, no infographic, no modern city.
+
+`age-of-taurus-cities-plain`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the Cities of the Plain during the long quiet, prosperous but politically dangerous, where fragments of inherited knowledge gather into a vengeance project. Scene/backdrop: fertile orange-green plain near a broad water basin, walled cities, orchards, canals, workshops, and hidden elevated facilities under a copper evening sky. Subject: urban prosperity and concealed technical ambition before the strike, with tiny anonymous figures and faint guarded lights but no visible violence. Palette: copper orange, olive green, lapis water, warm stone, black basalt, salt-white haze. Composition: wide landscape, cities mid-distance, basin and mountains framing the scene, no close crowd, no biblical costume drama, no text. Style: restrained matte painting, ominous but quiet, low to medium detail.
+
+`age-of-taurus-dead-sea-strike`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: the Sodom and Gomorrah strike and the Dead Sea basin as aftermath, shown at great distance as landscape transformation rather than spectacle. Scene/backdrop: high overlook of a fertile plain being overturned into a salt basin, with a distant vertical flash fading on the horizon, mineral haze, broken water channels, and white salt spreading across orange terrain. Subject: a targeted preventive strike leaving the physical scar later remembered as the Dead Sea. Palette: dark orange, salt white, black basalt, sulfur yellow, lapis shadow, smoky gray. Composition: very wide 2:1, no bodies, no close city destruction, no firestorm poster composition, no divine hand, no angels, no text. Style: sober cinematic matte painting, low to medium detail, geological and tragic.
+
+`age-of-taurus-abraham-test`
+
+> Use case: stylized-concept. Asset type: timeline chapter moodscape. Primary request: Abraham's loyalty test at the edge of Taurus, shown as a distant mountain scene of assessment and interruption, not as violence. Scene/backdrop: warm orange dawn over a bare highland ridge, a simple stone altar, low shrubs, and a vast empty sky with a faint descending light far above. Subject: two tiny anonymous figures at the altar and a ram-like animal shape caught in a thicket nearby, suggesting the test and its peaceful stop without showing a knife, harm, or close faces. Palette: copper dawn, warm limestone, desert rose, olive scrub, lapis blue shadow, soft white light. Composition: very wide landscape, figures small, silence and tension carried by space, no gore, no child close-up, no religious iconography, no text. Style: restrained historical-concept moodscape, low detail, solemn and humane.
 
 ## Remaining Chapter Sketches
 

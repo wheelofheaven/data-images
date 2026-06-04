@@ -260,6 +260,31 @@ images:
     quality: 85
     grain_intensity: 0.05
 
+  - filename: "age-of-taurus-pardon.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-taurus-bull-civilizations.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-taurus-cities-plain.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-taurus-dead-sea-strike.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "age-of-taurus-abraham-test.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
   # Conceptual/Artistic images
   - filename: "above-clouds-platform.png"
     quality: 80
