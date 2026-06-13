@@ -293,9 +293,32 @@ def _section_and_slug(rel_parts: tuple[str, ...], filename: str) -> tuple[str, s
             return None  # nested sub-section index — out of scope
         return (section, "index")
     if len(rel_parts) > 2:
-        # nested page — skip for now (would need slugified path)
+        # nested page — skip here; walk_content falls back to the page's
+        # explicit `path` frontmatter (see _section_slug_from_path).
         return None
     return (section, Path(filename).stem)
+
+
+def _section_slug_from_path(path_value: Any, filename: str, lang: str) -> tuple[str, str] | None:
+    """Derive (section, slug) from a page's explicit `path` frontmatter.
+
+    Source pages live in subdirs (content/sources/_generated/foo.md) but
+    flatten their URL via `path = "/sources/foo/"`. The walker's positional
+    mapping drops them as nested; this recovers the live section/slug so the
+    OG filename matches what seo.html requests: section = first path
+    component, slug = page.slug (the filename stem, Zola's default).
+
+    content/sources/_generated/the-12th-planet.md  path=/sources/the-12th-planet/
+        → ("sources", "the-12th-planet")
+    """
+    if not isinstance(path_value, str) or not path_value.strip("/"):
+        return None
+    comps = [c for c in path_value.strip("/").split("/") if c]
+    if comps and comps[0] == lang and lang != "en":
+        comps = comps[1:]
+    if not comps:
+        return None
+    return (comps[0], Path(filename).stem)
 
 
 def _str(val: Any) -> str:
@@ -351,16 +374,20 @@ def walk_content() -> list[Entry]:
         if sub[0] in {"i18n"}:
             continue
 
-        result = _section_and_slug(sub, path.name)
-        if result is None:
-            continue
-        section, slug = result
-
         fm = parse_frontmatter(path)
         if fm is None:
             continue
         if fm.get("draft"):
             continue
+
+        result = _section_and_slug(sub, path.name)
+        if result is None:
+            # Nested page (e.g. sources/_generated/foo.md). Recover the live
+            # section/slug from its explicit `path` frontmatter, if any.
+            result = _section_slug_from_path(fm.get("path"), path.name, lang)
+        if result is None:
+            continue
+        section, slug = result
 
         extra = fm.get("extra") or {}
         title = _str(fm.get("title"))
