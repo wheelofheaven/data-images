@@ -484,14 +484,23 @@ BRAND_LOGOMARK_SVG = _read_brand_svg("logomark.svg")
 # Rendering
 # ---------------------------------------------------------------------------
 
+def _strip_md(s: str) -> str:
+    """Strip inline markdown emphasis markers (*, **, `) so raw asterisks or
+    backticks from frontmatter summaries/titles never show on the card. The
+    page itself still renders the markdown; only the OG text is flattened."""
+    if not s:
+        return s
+    return s.replace("**", "").replace("*", "").replace("`", "")
+
+
 def render_template(env: Environment, entry: Entry) -> str:
     tpl = env.get_template(f"{entry.template}.html.j2")
     return tpl.render(
         slug=entry.slug,
         section=entry.section,
         section_label=entry.section_label,
-        title=entry.title,
-        summary=entry.summary,
+        title=_strip_md(entry.title),
+        summary=_strip_md(entry.summary),
         claim_type=entry.claim_type,
         category=entry.category,
         author=entry.author,
