@@ -1,0 +1,174 @@
+# Chronology age vignettes — /timeline/chronology/ readout artwork
+#
+# Purpose: one cinematic vignette per node of the Great Year chronology
+# (13 total: "In the beginning…" + the 12 precessional ages). They appear
+# in the readout panel of the redesigned /timeline/chronology/ page
+# (www repo, timeline-chronology.html) beneath the orbital stage, and are
+# reusable as generic age key-art elsewhere.
+#
+# Generation: feed each `prompt` below (prefixed with the shared style
+# block) to the image tool. Save PNG sources to:
+#   data-images/raw/chronology/<output_name>.png
+# then register them in data-images/manifest.yaml with category
+# "timeline" (quality 85, grain 0.05, like the equinox renders) and run
+# the processing + CDN sync. Final URLs will be:
+#   https://assets.wheelofheaven.world/images/timeline/<output_name>.webp
+# Wiring into the page: add a "vignette" field with that URL to the
+# matching entry in www.wheelofheaven.world/data/ages.json — the template
+# and JS already support it and hide the slot when the field is absent.
+# NOTE: the /gallery/ build script sweeps CDN categories; add these to its
+# EXCLUDE list if they should not appear in the render wall.
+
+shared_style: >
+  Cinematic widescreen concept painting, semi-realistic, painterly but
+  restrained, high dynamic range, deep space-and-atmosphere palette.
+  Consistent visual language across a 13-image series depicting one long
+  planetary engineering program: monumental scale, calm scientific
+  precision, awe without kitsch. The creators are the Elohim — an advanced
+  HUMAN civilization of small stature (about 1.2 m), pale olive-tinted
+  skin, dark hair, seamless white one-piece suits; never grey aliens,
+  never robes, never halos. Their craft are smooth white lens-shaped
+  vehicles with soft warm lights, never chrome flying saucers with domes.
+  No text, no logo, no watermark, no borders. Landscape 3:2, 1536x1024.
+
+images:
+  - output_name: chronology-00-in-the-beginning
+    age: "In the beginning… (23,970–21,810 BC)"
+    accent: yellow
+    prompt: >
+      A fleet of white lens-shaped starships departing a distant
+      earthlike home world into deep space, seen from high orbit; the
+      planet's night side glitters with the city lights of an advanced
+      civilization, a political storm implied by dark clouds over the
+      terminator; warm yellow starlight rims the hulls; mood of exile
+      and resolve, a one-way voyage beginning.
+
+  - output_name: chronology-01-age-of-capricorn
+    age: "Age of Capricorn — arrival and survey (21,810–19,650 BC)"
+    accent: mauve
+    prompt: >
+      A white lens-shaped survey craft hovering in high orbit above a
+      formless water world: no continents, a single global ocean wrapped
+      in thick luminous mist, the sun rising pale violet through haze at
+      the horizon's edge; instruments of light scanning the ocean below;
+      mood of first contact with an empty planet, Genesis day one.
+
+  - output_name: chronology-02-age-of-sagittarius
+    age: "Age of Sagittarius — parting the waters (19,650–17,490 BC)"
+    accent: blue
+    prompt: >
+      Planetary-scale atmospheric engineering seen from low orbit: a
+      colossal seam of clearing sky where the permanent mist is being
+      parted, revealing blue ocean and hard sunlight for the first time;
+      white craft arrayed in a working formation along the clearing
+      front; shafts of light striking open water; mood of the sky being
+      switched on, Genesis day two.
+
+  - output_name: chronology-03-age-of-scorpio
+    age: "Age of Scorpio — first land, first life (17,490–15,330 BC)"
+    accent: cyan
+    prompt: >
+      A newly raised supercontinent coastline from high altitude: raw
+      basalt-grey land freshly lifted from a global ocean, laboratory
+      pavilions of white architecture on the shore, and the first
+      green-cyan bloom of engineered plant life spreading from planted
+      test fields into the barren interior; mood of a garden begun on a
+      dead rock, Genesis day three.
+
+  - output_name: chronology-04-age-of-libra
+    age: "Age of Libra — calibrating the sky (15,330–13,170 BC)"
+    accent: teal
+    prompt: >
+      A white observatory terrace on a young green highland at dusk,
+      small white-suited scientists at slender instruments measuring a
+      brilliant star field; the moon and a wheeling zodiac band rendered
+      as precise teal diagram-light over the sky; the sun setting exactly
+      on an engineered sightline; mood of time itself being instrumented,
+      Genesis day four.
+
+  - output_name: chronology-05-age-of-virgo
+    age: "Age of Virgo — the animal ocean and sky (13,170–11,010 BC)"
+    accent: mint
+    prompt: >
+      A teeming primeval shoreline: an ocean alive with engineered fish
+      breaking the surface, vast flocks of new birds spiraling in a mint
+      dawn sky, and great long-necked tanninim wading in coastal
+      shallows; a white lens craft observing quietly from low altitude;
+      mood of a biosphere switched on at full volume, Genesis day five.
+
+  - output_name: chronology-06-age-of-leo
+    age: "Age of Leo — humanity in the makers' image (11,010–8,850 BC)"
+    accent: green
+    prompt: >
+      The Garden of Eden as an advanced botanical laboratory campus in a
+      green river valley: terraced gardens, white pavilions, seven small
+      working encampments implied along the horizon; in the foreground a
+      small white-suited scientist and a taller newly created human
+      standing face to face like a mirror; warm golden-green light; mood
+      of the program culminating, Genesis day six.
+
+  - output_name: chronology-07-age-of-cancer
+    age: "Age of Cancer — the day of rest and its fallout (8,850–6,690 BC)"
+    accent: yellow
+    prompt: >
+      A flourishing early human civilization on a supercontinent plain at
+      amber dusk — mudbrick settlements, fields, first monuments — while
+      white lens craft withdraw upward into a watchful sky; on the
+      horizon a walled garden stands closed and dark; subtle unease under
+      golden light, prosperity being observed from above; Genesis day
+      seven, the rest that does not hold.
+
+  - output_name: chronology-08-age-of-gemini
+    age: "Age of Gemini — the flood and the broken land (6,690–4,530 BC)"
+    accent: pink
+    prompt: >
+      Planetary cataclysm from high orbit: a blinding detonation flash on
+      the limb of the supercontinent, a ring-shaped shockwave and
+      continent-scale tsunami tearing the single landmass into drifting
+      fragments; the ocean lit rose-pink by the blast; far above, one
+      small white ark-craft in a safe orbit, carrying preserved life;
+      mood of the world ending and being carried at the same time.
+
+  - output_name: chronology-09-age-of-taurus
+    age: "Age of Taurus — consolidation after the flood (4,530–2,370 BC)"
+    accent: soft-pink
+    prompt: >
+      Post-flood dawn over a young Mesopotamian plain: ziggurats and
+      irrigation lines under soft rose light on scattered new continents'
+      coastline; in the middle distance a scorched glassy depression
+      filling with dead mineral water where two cities used to stand; a
+      single white craft high and small in the sky, pardoning and
+      watching; mood of civilization rebuilt under terms.
+
+  - output_name: chronology-10-age-of-aries
+    age: "Age of Aries — the law at Sinai (2,370–210 BC)"
+    accent: lavender
+    prompt: >
+      A dark granite mountain wrapped in engineered cloud and controlled
+      fire at night, a column of lavender-white light standing on its
+      summit like a landed beam; at the mountain's foot a vast encampment
+      of tents and small fires waits; a lens-shaped silhouette rests
+      inside the summit glow; mood of law being delivered as a landing
+      event.
+
+  - output_name: chronology-11-age-of-pisces
+    age: "Age of Pisces — the fish, the message, the science (210 BC–AD 1945)"
+    accent: mauve
+    prompt: >
+      Dawn over the Sea of Galilee rendered as the hinge of an age:
+      fishing boats and nets in violet morning mist in the foreground,
+      and rising along the sky above them a subtle arc of images of the
+      coming two millennia — sails, cathedrals' scaffolding, printing,
+      telescopes, early rockets — painted as constellations of pale
+      mauve light; mood of one message crossing twenty centuries.
+
+  - output_name: chronology-12-age-of-aquarius
+    age: "Age of Aquarius — the age of revelation (AD 1945–4,110)"
+    accent: blue
+    prompt: >
+      Modern Earth from orbit at sunrise — recognizable present-day
+      continents, city lights fading on the night side, the thin blue
+      atmosphere line burning gold at the limb; below, implied at the
+      terminator, a serene white embassy compound in a garden awaits on
+      neutral ground; one white lens craft approaching Earth from deep
+      space; mood of a threshold: return expected, welcome unbuilt.
