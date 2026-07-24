@@ -181,6 +181,22 @@ run = "source venv/bin/activate && python -c 'import yaml; data=yaml.safe_load(o
 description = "Actually process a small subset (not dry-run)"
 run = "source venv/bin/activate && python -c 'import yaml; data=yaml.safe_load(open(\"manifest.yaml\")); data[\"images\"]=data[\"images\"][:3]; yaml.dump(data, open(\"test_manifest.yaml\", \"w\"))' && python scripts/process_images.py --config test_manifest.yaml"
 
+# Deployment tasks
+[tasks.deploy]
+description = "Deploy processed images to assets.wheelofheaven.io CDN"
+run = "source venv/bin/activate && python scripts/deploy_to_cdn.py"
+
+[tasks.deploy-dry-run]
+description = "Show what would be deployed (dry run)"
+run = "source venv/bin/activate && python scripts/deploy_to_cdn.py --dry-run"
+
+[tasks.full-pipeline]
+description = "Process all images and deploy to CDN"
+run = [
+    "source venv/bin/activate && python scripts/process_images.py --config manifest.yaml",
+    "source venv/bin/activate && python scripts/deploy_to_cdn.py",
+]
+
 # Aliases for common commands
 [tasks.run]
 alias = "process"

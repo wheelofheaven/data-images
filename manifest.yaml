@@ -4,74 +4,91 @@
 # Format:
 # - filename: the name of the file in raw/ directory
 #   output_name: optional custom output name (if not specified, uses original name)
+#   category: CDN category (wiki, timeline, library, og, icons, backgrounds)
 #   quality: image quality (1-100, default: 80)
 #   grain_intensity: salt and pepper grain filter intensity (0.0-1.0, default: 0.1)
 #   formats: list of output formats to generate (default: ["avif", "webp"])
 #   enabled: whether to process this image (default: true)
 
 images:
-  # Astronomical/Space images
+  # Astronomical/Space images → timeline
   - filename: "20202003_vernal_equinox_stellarium.jpg"
+    category: "timeline"
     quality: 85
     grain_intensity: 0.05
 
   - filename: "equinox_1945.png"
+    category: "timeline"
     quality: 85
     grain_intensity: 0.05
 
   - filename: "equinox_bc11010.png"
+    category: "timeline"
     quality: 85
     grain_intensity: 0.05
 
   - filename: "equinox_bc13170.png"
+    category: "timeline"
     quality: 85
     grain_intensity: 0.05
 
   - filename: "equinox_bc15330.png"
+    category: "timeline"
     quality: 85
     grain_intensity: 0.05
 
   - filename: "equinox_bc17490.png"
+    category: "timeline"
     quality: 85
     grain_intensity: 0.05
 
   - filename: "equinox_bc19650.png"
+    category: "timeline"
     quality: 85
     grain_intensity: 0.05
 
   - filename: "equinox_bc210.png"
+    category: "timeline"
     quality: 85
     grain_intensity: 0.05
 
   - filename: "equinox_bc21810.png"
+    category: "timeline"
     quality: 85
     grain_intensity: 0.05
 
   - filename: "equinox_bc2370.png"
+    category: "timeline"
     quality: 85
     grain_intensity: 0.05
 
   - filename: "equinox_bc4530.png"
+    category: "timeline"
     quality: 85
     grain_intensity: 0.05
 
   - filename: "equinox_bc6690.png"
+    category: "timeline"
     quality: 85
     grain_intensity: 0.05
 
   - filename: "equinox_bc8850.png"
+    category: "timeline"
     quality: 85
     grain_intensity: 0.05
 
   - filename: "hubble-cosmic-web.jpg"
+    category: "timeline"
     quality: 90
     grain_intensity: 0.03
 
   - filename: "precession_schema.jpg"
+    category: "timeline"
     quality: 85
     grain_intensity: 0.05
 
   - filename: "muse-deep-space.jpg"
+    category: "timeline"
     quality: 90
     grain_intensity: 0.03
 
@@ -420,356 +437,700 @@ images:
     quality: 85
     grain_intensity: 0.05
 
-  # Conceptual/Artistic images
+  # Conceptual/Artistic images → wiki
   - filename: "above-clouds-platform.png"
+    category: "wiki"
     quality: 80
     grain_intensity: 0.1
 
   - filename: "above-the-clouds-structure.png"
+    category: "wiki"
     quality: 80
     grain_intensity: 0.1
 
   - filename: "abundance.png"
+    category: "wiki"
     quality: 80
     grain_intensity: 0.1
 
   - filename: "ancient-monuments-sunset.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "antidiluvian-queen-on-throne.png"
+    category: "wiki"
     quality: 80
     grain_intensity: 0.12
 
   - filename: "archaic-blue-planet.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "ark-in-orbit.png"
+    category: "wiki"
     quality: 80
     grain_intensity: 0.1
 
   - filename: "atlantian-city.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.1
 
   - filename: "barren-lands-outpost.png"
+    category: "wiki"
     quality: 80
     grain_intensity: 0.12
 
   - filename: "bird-of-paradise.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "blue-planet-afar.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "blue-planet-mist.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "blue-planet-surface.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "circular-city-seen-from-the-sky.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.1
 
   - filename: "crowd-walking-towards-beam-earth.png"
+    category: "wiki"
     quality: 80
     grain_intensity: 0.1
 
   - filename: "crowd-walking-towards-beam.png"
+    category: "wiki"
     quality: 80
     grain_intensity: 0.1
 
   - filename: "dinosaurs-on-plain.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.1
 
   - filename: "dome-in-tranquil-valley.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "earth-sunrise-from-orbit.png"
+    category: "wiki"
     quality: 90
     grain_intensity: 0.05
 
   - filename: "elephant-biome.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.1
 
   - filename: "explosion-over-the-sea.png"
+    category: "wiki"
     quality: 80
     grain_intensity: 0.12
 
   - filename: "fauna-and-flora.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "floating-spacesuit-in-sky.png"
+    category: "wiki"
     quality: 80
     grain_intensity: 0.1
 
   - filename: "futuristic-city-with-tower.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.1
 
   - filename: "genesis-dome-interior (2).png"
     output_name: "genesis-dome-interior-2"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "genesis-dome-interior.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "genetic-research-lab.png"
+    category: "wiki"
     quality: 80
     grain_intensity: 0.1
 
   - filename: "geodesic-instruments.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "geodesic-structures.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "glass-dome-at-night.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "glowing-domes-in-landscape.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "human-genesis.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.1
 
   - filename: "interstellar-space-travel.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "lion-and-crocodile-struggle.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.1
 
   - filename: "man-standing-on-cliff-overseeing-spacecraft.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.1
 
   - filename: "man-standing-on-plaza.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.1
 
   - filename: "modern-urban-landscape.png"
+    category: "wiki"
     quality: 80
     grain_intensity: 0.1
 
   - filename: "monolithic-base-in-snow.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.12
 
   - filename: "oceanside-geodesy-station.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "orbital-geodesy-satellite.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "orbital-outpost.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "orbiting-spheres-above-fountain.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "people-in-light-marble-plaza.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "people-standing-over-golden-floor.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "primordial-jungle.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "primordial-nature-two-researchers.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "projectile-impact-on-earth.png"
+    category: "wiki"
     quality: 80
     grain_intensity: 0.12
 
   - filename: "proto-earth-satellite.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "pyramid-red-glowing-star.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "pyramid-shaped-energy-structure.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "red-colored-cityscape.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.1
 
   - filename: "saurian-experiments.png"
+    category: "wiki"
     quality: 80
     grain_intensity: 0.12
 
   - filename: "soldiers-in-front-of-silos.png"
+    category: "wiki"
     quality: 80
     grain_intensity: 0.12
 
   - filename: "spacecraft-in-orbit.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "spacecraft-orbiting-earth-sunrise.png"
+    category: "wiki"
     quality: 90
     grain_intensity: 0.05
 
   - filename: "sunset-man-on-hill.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "terraforming-explosions.png"
+    category: "wiki"
     quality: 80
     grain_intensity: 0.12
 
   - filename: "two-people-on-hill-at-sunrise.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "two-treasure-hunters.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.1
 
   - filename: "underwater-lab.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "vehicle-in-snowy-landscape.png"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.1
 
-  # Book covers and reference materials
+  # Book covers and reference materials → library
   - filename: "ces-dieux-qui-firent-le-ciel-et-la-terre-book.jpg"
+    category: "library"
     quality: 90
     grain_intensity: 0.03
 
   - filename: "dhorme-bible-books.jpg"
+    category: "library"
     quality: 90
     grain_intensity: 0.03
 
   - filename: "escaping-from-eden-book.jpg"
+    category: "library"
     quality: 90
     grain_intensity: 0.03
 
   - filename: "gospel-in-the-stars-book.jpg"
+    category: "library"
     quality: 90
     grain_intensity: 0.03
 
   - filename: "hamlets-mill-book.jpg"
+    category: "library"
     quality: 90
     grain_intensity: 0.03
 
   - filename: "l-ere-du-verseau-book.jpg"
+    category: "library"
     quality: 90
     grain_intensity: 0.03
 
   - filename: "la-bibbia-non-e-un-libro-sacro-book.jpg"
+    category: "library"
     quality: 90
     grain_intensity: 0.03
 
   - filename: "la-lune-cle-de-la-bible-book.jpg"
+    category: "library"
     quality: 90
     grain_intensity: 0.03
 
   - filename: "le-message-book.jpg"
+    category: "library"
     quality: 90
     grain_intensity: 0.03
 
   - filename: "mazzaroth-rolleston-book.jpg"
+    category: "library"
     quality: 90
     grain_intensity: 0.03
 
   - filename: "mccall_the_prologue_and_the_promise.jpg"
+    category: "library"
     quality: 90
     grain_intensity: 0.03
 
   - filename: "the-scars-of-eden-book.jpg"
+    category: "library"
     quality: 90
     grain_intensity: 0.03
 
   - filename: "the-zohar-pritzker-edition-book.jpg"
+    category: "library"
     quality: 90
     grain_intensity: 0.03
 
   - filename: "wonders-in-the-sky-book.jpg"
+    category: "library"
     quality: 90
     grain_intensity: 0.03
 
-  # Historical/Documentary images
+  # Historical/Documentary images → wiki
   - filename: "pyramids-giza-air-force-ww2-hd.jpg"
+    category: "wiki"
     quality: 90
     grain_intensity: 0.05
 
   - filename: "fact-check.jpg"
+    category: "wiki"
     quality: 85
     grain_intensity: 0.05
 
-  # Mood/Atmosphere images
+  # Mood/Atmosphere images → backgrounds
   - filename: "moodscape_01.jpg"
+    category: "backgrounds"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "moodscape_02.jpg"
+    category: "backgrounds"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "moodscape_03.jpg"
+    category: "backgrounds"
     quality: 85
     grain_intensity: 0.08
 
   - filename: "moodscape_04.jpg"
+    category: "backgrounds"
     quality: 85
     grain_intensity: 0.08
 
-  # Symbols and logos
+  # Symbols and logos → icons/og
   - filename: "renderings-raelian-symbol-of-infinity.jpg"
+    category: "icons"
     quality: 90
     grain_intensity: 0.03
-  
+
   - filename: "wheel-of-heaven-background.png"
+    category: "og"
     quality: 90
     grain_intensity: 0.1
 
   - filename: "wheel-of-heaven-banner.jpg"
+    category: "og"
     quality: 90
     grain_intensity: 0.05
 
   - filename: "ye-tweet-raelian-symbol.jpg"
+    category: "wiki"
     quality: 90
     grain_intensity: 0.03
 
-  # Personal/Profile images
+  # Personal/Profile images → wiki
   - filename: "zara_san.jpg"
+    category: "wiki"
     quality: 90
     grain_intensity: 0.05
+
+  # Hero/Site images → hero
+  - filename: "hero-genesis.jpg"
+    category: "hero"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "sunrise.png"
+    category: "hero"
+    quality: 85
+    grain_intensity: 0.05
+
+  # Earth globe images → earth
+  - filename: "earth-clouds.png"
+    category: "earth"
+    quality: 85
+    grain_intensity: 0.02
+
+  - filename: "earth-default.png"
+    category: "earth"
+    quality: 85
+    grain_intensity: 0.02
+
+  - filename: "earth-ocean-blue.png"
+    category: "earth"
+    quality: 85
+    grain_intensity: 0.02
+
+  - filename: "earth-ocean-mist.png"
+    category: "earth"
+    quality: 85
+    grain_intensity: 0.02
+
+  - filename: "earth-pangeae-arid.png"
+    category: "earth"
+    quality: 85
+    grain_intensity: 0.02
+
+  - filename: "earth-pangeae-green.png"
+    category: "earth"
+    quality: 85
+    grain_intensity: 0.02
+
+  # Brand images → brand
+  - filename: "wheel-of-heaven.png"
+    category: "brand"
+    quality: 90
+    grain_intensity: 0.0
+
+  - filename: "wheel-of-heaven-square.png"
+    category: "brand"
+    quality: 90
+    grain_intensity: 0.0
+
+  # Personality portraits → wiki/library metadata
+  - filename: "portraits/rael-claude-vorilhon.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  - filename: "portraits/yahweh-eloha.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  - filename: "portraits/lucifer-light-bringer.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  - filename: "portraits/satan-adversary.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  - filename: "portraits/elohim-collective.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  - filename: "portraits/prophetic-lineage.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  # Personality portraits v2 → wiki/library metadata
+  - filename: "portraits/rael-claude-vorilhon-v2.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  - filename: "portraits/yahweh-eloha-v2.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  - filename: "portraits/lucifer-light-bringer-v2.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  - filename: "portraits/satan-adversary-v2.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  - filename: "portraits/elohim-collective-v2.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  # Personality portraits v3 → wiki/library metadata
+  - filename: "portraits/rael-claude-vorilhon-v3.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  - filename: "portraits/lucifer-light-bringer-v3.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  # Place portrait → Eden wiki entry
+  - filename: "portraits/eden-garden-v1.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  - filename: "portraits/petra-nabataean-v1.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  - filename: "portraits/pangaea-supercontinent-v1.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  - filename: "portraits/elohim-home-planet-v1.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  - filename: "portraits/third-temple-embassy-v1.png"
+    category: "wiki"
+    quality: 88
+    grain_intensity: 0.03
+
+  # Chronology age vignettes → timeline readout artwork
+  - filename: "chronology/chronology-00-in-the-beginning.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "chronology/chronology-01-age-of-capricorn.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "chronology/chronology-02-age-of-sagittarius.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "chronology/chronology-03-age-of-scorpio.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "chronology/chronology-04-age-of-libra.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "chronology/chronology-05-age-of-virgo.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "chronology/chronology-06-age-of-leo.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "chronology/chronology-07-age-of-cancer.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "chronology/chronology-08-age-of-gemini.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "chronology/chronology-09-age-of-taurus.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "chronology/chronology-10-age-of-aries.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "chronology/chronology-11-age-of-pisces.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  - filename: "chronology/chronology-12-age-of-aquarius.png"
+    category: "timeline"
+    quality: 85
+    grain_intensity: 0.05
+
+  # ── Newsroom dispatch imagery → news ──────────────────────────────────
+  # PURSUE Release 04 (content/news/pursue-release-04-the-nuclear-nexus.md).
+  # Source files are U.S. federal government works — public domain under
+  # 17 U.S.C. §105. TO ACTIVATE: export page 1 of the DOE-UAP-D004 transcript
+  # PDF to PNG, save it at raw/news/pursue-04-los-alamos-conference-1949.png,
+  # then `mise run process && mise run deploy`. It is referenced in content
+  # via figure(src="news/pursue-04-los-alamos-conference-1949").
+  # NB: document scan → grain_intensity 0.0 so the typewritten text stays legible.
+  - filename: "news/pursue-04-los-alamos-conference-1949.png"
+    output_name: "pursue-04-los-alamos-conference-1949"
+    category: "news"
+    quality: 88
+    grain_intensity: 0.0
+    enabled: true
+
+  # The three STS-80 (Space Shuttle Columbia) images — the whole of Release 04's
+  # "3 images", a single sequence the astronauts shot of one object in 1996.
+  # All NASA-produced → clean §105 public domain (no civilian-copyright caveat).
+  # grain 0.0 — documentary images, kept faithful, no aesthetic grain.
+  # TO ACTIVATE: download each JPG in a browser (war.gov blocks scripted access)
+  # from the release-04 Slideshow folder and save at the raw/ path below.
+  # Base URL: https://www.war.gov/portals/1/Interactive/2026/UFO/071026/Slideshow/
+  #   Image 1 → NASA-UAP-D030_STS-80-Unidentified-Object-Image1_1996.jpg
+  #   Image 2 → NASA-UAP-D031_STS-80-Unidentified-Object-Image2_1996.jpg  (confirmed)
+  #   Image 3 → NASA-UAP-D032_STS-80-Unidentified-Object-Image3_1996.jpg
+  # (D030/D032 inferred from the D031 pattern — confirm exact IDs in the slideshow.)
+  - filename: "news/pursue-04-sts80-1996-1.jpg"
+    output_name: "pursue-04-sts80-1996-1"
+    category: "news"
+    quality: 85
+    grain_intensity: 0.0
+    enabled: true
+  - filename: "news/pursue-04-sts80-1996-2.jpg"
+    output_name: "pursue-04-sts80-1996-2"
+    category: "news"
+    quality: 85
+    grain_intensity: 0.0
+    enabled: true
+  - filename: "news/pursue-04-sts80-1996-3.jpg"
+    output_name: "pursue-04-sts80-1996-3"
+    category: "news"
+    quality: 85
+    grain_intensity: 0.0
+    enabled: true
 
 # Global settings (used as defaults when not specified per image)
 global_settings:
@@ -778,8 +1139,10 @@ global_settings:
   output_directory: "processed"
   preserve_metadata: false
   formats: ["avif", "webp"] # Generate both AVIF and WebP by default
+  default_category: "wiki"  # Default CDN category if not specified
 
 # Processing options
+
 processing:
   # Create thumbnails alongside full images
   create_thumbnails: true
