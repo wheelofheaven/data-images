@@ -389,6 +389,13 @@ def walk_content() -> list[Entry]:
             continue
         section, slug = result
 
+        # Zola's page.slug — which seo.html uses to compose the OG URL —
+        # honors a frontmatter `slug` override; the filename stem is only
+        # the default. Mirror that, or slug-overridden pages 404 their OG.
+        fm_slug = fm.get("slug")
+        if isinstance(fm_slug, str) and fm_slug.strip():
+            slug = fm_slug.strip()
+
         extra = fm.get("extra") or {}
         title = _str(fm.get("title"))
         if not title:
