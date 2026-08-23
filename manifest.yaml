@@ -1132,6 +1132,29 @@ images:
     grain_intensity: 0.0
     enabled: true
 
+  # PURSUE Release 05 (content/news/pursue-release-05-triangles-and-the-white-house-file.md).
+  # Both files are U.S. federal government works — public domain under 17 U.S.C. §105.
+  # Lead: the FBI's own digital rendering of the 2002 Bagram triangle (not a photograph;
+  # captioned as a rendering in content). Saved from the release-05 Slideshow folder
+  # (war.gov blocks scripted access — fetched via Wayback id_ raw URL).
+  - filename: "news/pursue-05-bagram-triangle-rendering-2002.jpg"
+    output_name: "pursue-05-bagram-triangle-rendering-2002"
+    category: "news"
+    quality: 85
+    grain_intensity: 0.0
+    enabled: true
+
+  # The EOP/NASC single-page FBIS transcript of the Nov 8, 1963 Radio Tupi broadcast
+  # (Conde, Bahia sphere story), with the Nov 13 pencil inquiry. Exported from
+  # EOP-UAP-D001 PDF at 200 dpi via pdftoppm.
+  # NB: document scan → grain_intensity 0.0 so the typewritten text stays legible.
+  - filename: "news/pursue-05-bahia-fbis-intercept-1963.png"
+    output_name: "pursue-05-bahia-fbis-intercept-1963"
+    category: "news"
+    quality: 88
+    grain_intensity: 0.0
+    enabled: true
+
 # Global settings (used as defaults when not specified per image)
 global_settings:
   quality: 80
