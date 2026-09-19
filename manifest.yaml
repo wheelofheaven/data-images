@@ -1155,6 +1155,38 @@ images:
     grain_intensity: 0.0
     enabled: true
 
+  # --- PURSUE Release 06 dispatch (2026-09-19) ---
+  # Frame (t=21 s) from the Newhouse film, Tremonton, Utah, July 2, 1952 — NARA
+  # digitization of a 16mm print (341.PBB.345), released as DOW-UAP-PR159 and
+  # hosted on DVIDS (video 1023402). Cropped to drop the film-edge band; levels
+  # adjusted with an ffmpeg curves filter because the print is very dark. The
+  # caption in content discloses the adjustment.
+  - filename: "news/pursue-06-tremonton-film-frame-1952.jpg"
+    output_name: "pursue-06-tremonton-film-frame-1952"
+    category: "news"
+    quality: 85
+    grain_intensity: 0.0
+    enabled: true
+
+  # Page one of the AAWSAP Statement of Objectives, DIA, July 18, 2008
+  # (DOW-UAP-D110). Saved from the release-06 top-rotator folder via Wayback id_.
+  # Document scan → grain 0.0.
+  - filename: "news/pursue-06-aawsap-statement-of-objectives-2008.jpg"
+    output_name: "pursue-06-aawsap-statement-of-objectives-2008"
+    category: "news"
+    quality: 88
+    grain_intensity: 0.0
+    enabled: true
+
+  # Feb 1953 teletype from the Project Blue Book file on the Tremonton film
+  # (DOW-UAP-D102), 28th Air Division → ATIC. Same rotator folder. Document scan.
+  - filename: "news/pursue-06-blue-book-teletype-newhouse-1953.jpg"
+    output_name: "pursue-06-blue-book-teletype-newhouse-1953"
+    category: "news"
+    quality: 88
+    grain_intensity: 0.0
+    enabled: true
+
 # Global settings (used as defaults when not specified per image)
 global_settings:
   quality: 80
