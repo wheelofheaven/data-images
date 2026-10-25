@@ -34,6 +34,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import hashlib
+import os
 import logging
 import re
 import sys
@@ -544,37 +545,45 @@ def hash_sidecar(out: Path) -> Path:
     return out.with_suffix(out.suffix + ".hash")
 
 
+def _ensure_symlink(link: Path, target: Path, what: str) -> None:
+    """Point `link` at `target`, replacing a stale or dangling symlink.
+
+    The links used to be created once and left alone; when the website repo was
+    renamed (www.wheelofheaven.io → www.wheelofheaven.world) they kept pointing at
+    the old path, every @font-face silently failed, and thousands of cards shipped
+    in the system fallback font. Repairing on every run makes that impossible.
+    """
+    if link.is_symlink():
+        try:
+            current = link.resolve(strict=True)
+        except FileNotFoundError:
+            current = None
+        if current == target.resolve():
+            return
+        logging.warning("Repointing stale %s symlink %s → %s", what, link, target)
+        link.unlink()
+    elif link.exists():
+        logging.warning("%s is a real directory, not a symlink; leaving it alone", link)
+        return
+    if not target.exists():
+        logging.warning("%s dir missing at %s — fallbacks will render", what, target)
+        return
+    link.symlink_to(target, target_is_directory=target.is_dir())
+
+
 def ensure_font_symlink(work_dir: Path) -> None:
     """Make the www fonts visible to the rendered HTML at ./fonts/."""
-    fonts_link = work_dir / "fonts"
-    if fonts_link.exists() or fonts_link.is_symlink():
-        return
-    if not FONT_VENDOR_DIR.exists():
-        logging.warning("Font vendor dir missing at %s — fallbacks will render", FONT_VENDOR_DIR)
-        return
-    fonts_link.symlink_to(FONT_VENDOR_DIR, target_is_directory=True)
+    _ensure_symlink(work_dir / "fonts", FONT_VENDOR_DIR, "Font vendor")
 
 
 def ensure_theme_font_symlink(work_dir: Path) -> None:
     """Expose theme-only fonts (Frank Ruhl Libre for Hebrew, etc.) at ./theme-fonts/."""
-    link = work_dir / "theme-fonts"
-    if link.exists() or link.is_symlink():
-        return
-    if not THEME_FONT_VENDOR_DIR.exists():
-        logging.warning("Theme font dir missing at %s — Hebrew/Greek fallbacks will render", THEME_FONT_VENDOR_DIR)
-        return
-    link.symlink_to(THEME_FONT_VENDOR_DIR, target_is_directory=True)
+    _ensure_symlink(work_dir / "theme-fonts", THEME_FONT_VENDOR_DIR, "Theme font vendor")
 
 
 def ensure_background_symlink(work_dir: Path) -> None:
     """Make the photographic Milky Way background visible at ./background.avif."""
-    link = work_dir / "background.avif"
-    if link.exists() or link.is_symlink():
-        return
-    if not BACKGROUND_FILE.exists():
-        logging.warning("Background image missing at %s — bg will be flat", BACKGROUND_FILE)
-        return
-    link.symlink_to(BACKGROUND_FILE)
+    _ensure_symlink(work_dir / "background.avif", BACKGROUND_FILE, "Background image")
 
 
 async def render_one(ctx, entry: Entry, html: str, work_dir: Path, force: bool) -> bool:
@@ -631,7 +640,15 @@ async def render_all(entries: list[Entry], force: bool) -> tuple[int, int]:
     rendered = 0
     skipped = 0
     async with async_playwright() as p:
-        browser = await p.chromium.launch()
+        # Playwright's bundled headless shell has hung on every screenshot on
+        # this machine (2026-10-14); the system Chrome channel renders reliably.
+        # OG_BROWSER_CHANNEL=chromium restores the bundled browser.
+        channel = os.environ.get("OG_BROWSER_CHANNEL", "chrome")
+        try:
+            browser = await p.chromium.launch(channel=channel) if channel != "chromium" else await p.chromium.launch()
+        except Exception as exc:  # channel not installed → bundled browser
+            logging.warning("Could not launch channel %r (%s); using bundled Chromium", channel, exc)
+            browser = await p.chromium.launch()
         ctx = await browser.new_context(
             viewport={"width": CANVAS_W, "height": CANVAS_H},
             device_scale_factor=1,

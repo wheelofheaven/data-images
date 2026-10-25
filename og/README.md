@@ -14,7 +14,8 @@ dependency) and renders into a dedicated `processed/og/` subtree.
 # One-time setup: venv + Playwright Chromium download
 mise run setup
 
-# Render everything (incremental — hash-skips unchanged entries)
+# Render everything (incremental — hash-skips unchanged entries).
+# Uses the system Chrome channel; set OG_BROWSER_CHANNEL=chromium for the bundled browser.
 python scripts/generate_og.py
 
 # Push the rendered images to the CDN repo
@@ -62,7 +63,9 @@ On re-run, entries whose hash matches the sidecar are skipped. A full
 re-render of 1500 pages takes ~70 minutes; an incremental run after a few
 title edits takes seconds.
 
-Use `--force` to bypass the sidecar and re-render everything.
+Use `--force` to bypass the sidecar and re-render everything. The hash covers
+content fields only, so a template or font change (such as the 2026-10-25 move
+from Jost to Firmament Sans) needs `--force` to reach existing images.
 
 ## Chip i18n
 

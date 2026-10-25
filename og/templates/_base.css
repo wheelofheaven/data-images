@@ -8,18 +8,32 @@
  * --fonts-dir base URL the renderer hands the page (see scripts/generate_og.py).
  */
 
-/* Layer 1 — primary reading */
+/* Layer 1 — primary reading: Firmament Sans 0.1, the site's body face
+ * (scholarly Latin + Cyrillic), pinned to the same versioned vendor path
+ * the website serves. */
 @font-face {
-    font-family: Jost;
+    font-family: "Firmament Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/jost/jost-v19-cyrillic_latin-regular.woff2") format("woff2");
+    src: url("fonts/firmament-sans/0.1/FirmamentSans-Regular.woff2") format("woff2");
 }
 @font-face {
-    font-family: Jost;
+    font-family: "Firmament Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("fonts/firmament-sans/0.1/FirmamentSans-Italic.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Firmament Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/jost/jost-v19-cyrillic_latin-700.woff2") format("woff2");
+    src: url("fonts/firmament-sans/0.1/FirmamentSans-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Firmament Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: url("fonts/firmament-sans/0.1/FirmamentSans-BoldItalic.woff2") format("woff2");
 }
 
 /* Layer 2 — structural / conceptual */
@@ -142,7 +156,7 @@ html, body {
 }
 
 body {
-    font-family: Jost, system-ui, sans-serif;
+    font-family: "Firmament Sans", system-ui, sans-serif;
     color: var(--c-fg);
     background: var(--c-bg-0);
     position: relative;
@@ -260,7 +274,7 @@ body {
 .og--xlong .og__title { font-size: 48px; line-height: 1.12; }
 
 .og__summary {
-    font-family: Jost, system-ui, sans-serif;
+    font-family: "Firmament Sans", system-ui, sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.4;
