@@ -78,8 +78,21 @@
     src: url("fonts/ia-writer-quattro/iAWriterQuattroS-Bold.woff2") format("woff2");
 }
 
-/* Hebrew display face — Frank Ruhl Libre. Self-hosted, variable weight.
- * Mirrors the site-side stack in themes/bifrost/sass/base/_fonts.scss. */
+/* Hebrew body/display companion — Miriam Libre, the face the site's Hebrew
+ * locale reads in since 2026-10-24 (variable wght 400–700, Hebrew-only subset,
+ * see theme-fonts/miriam-libre/README.md). Bounded to the Hebrew blocks so
+ * Latin words inside Hebrew cards keep coming from Firmament Sans. */
+@font-face {
+    font-family: "Miriam Libre";
+    font-style: normal;
+    font-weight: 400 700;
+    src: url("theme-fonts/miriam-libre/miriam-libre-hebrew.woff2") format("woff2");
+    unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+
+/* Hebrew citation face — Frank Ruhl Libre. Self-hosted, variable weight; the
+ * fallback for the few Hebrew codepoints Miriam Libre lacks (sof pasuq,
+ * cantillation). Mirrors the site-side stack in themes/bifrost/sass/base/_fonts.scss. */
 @font-face {
     font-family: "Frank Ruhl Libre";
     font-style: normal;
@@ -343,24 +356,26 @@ body {
     display: block;
 }
 
-/* Hebrew — swap title/summary into Frank Ruhl Libre so glyphs are covered
- * by an editorial Hebrew face rather than the browser's fallback. Chip,
- * meta line, and claim pill keep their Latin face and fall through to
- * Frank Ruhl Libre via the stack so navbar translations ("ויקי", "מקורות")
- * still render in a Hebrew face. Flexbox mirrors automatically under
- * dir="rtl" — chip jumps to the right edge, wordmark to the left — which
- * matches the site's RTL behavior. */
+/* Hebrew — title/summary read in the site's Hebrew companion pair: Miriam
+ * Libre for Hebrew glyphs, Firmament Sans for Latin words inside the same
+ * line (both @font-faces are unicode-range bounded), Frank Ruhl Libre for
+ * the rare marks Miriam lacks. This mirrors $font-family-he-body in
+ * themes/bifrost/sass/base/_typography.scss. Chip, meta line, and claim
+ * pill fall through to Miriam Libre so navbar translations ("ויקי",
+ * "מקורות") render in the same Hebrew face as the site's navigation.
+ * Flexbox mirrors automatically under dir="rtl" — chip jumps to the right
+ * edge, wordmark to the left — which matches the site's RTL behavior. */
 :lang(he) .og__title,
 :lang(he) .og__summary {
     /* !important to beat the inline font-family set by news.html.j2 and
-     * library.html.j2 — we always want the editorial Hebrew face here. */
-    font-family: "Frank Ruhl Libre", "Noto Serif Hebrew", "SBL Hebrew", serif !important;
+     * library.html.j2 — we always want the site's Hebrew face here. */
+    font-family: "Miriam Libre", "Firmament Sans", "Frank Ruhl Libre", "Noto Serif Hebrew", "SBL Hebrew", sans-serif !important;
     letter-spacing: 0;
 }
 :lang(he) .og__section-chip,
 :lang(he) .og__meta-line,
 :lang(he) .og__claim {
-    font-family: "Frank Ruhl Libre", iAWriterQuattroS, ui-monospace, monospace;
+    font-family: "Miriam Libre", iAWriterQuattroS, ui-monospace, monospace;
     /* Caps + wide tracking are LTR typographic moves; Hebrew is
      * unicameral, so flatten the tracking and drop the uppercase. */
     text-transform: none;
