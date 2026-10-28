@@ -874,6 +874,11 @@ images:
     quality: 90
     grain_intensity: 0.05
 
+  - filename: "zara_zinsfuss_2026.png"
+    category: "wiki"
+    quality: 90
+    grain_intensity: 0.05
+
   # Hero/Site images → hero
   - filename: "hero-genesis.jpg"
     category: "hero"
