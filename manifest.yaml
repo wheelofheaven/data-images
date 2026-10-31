@@ -1192,6 +1192,37 @@ images:
     grain_intensity: 0.0
     enabled: true
 
+  # --- PURSUE Release 07 dispatch (2026-10-31) ---
+  # Fifth of nine uncaptioned frames closing the FBI FD-302 (FBI-UAP-D043): a
+  # black triangle placed over a landscape photograph — a reconstruction, not a
+  # photograph of the object. Embedded JPEG extracted with pdfimages from the
+  # Release 07 bundle (via Wayback id_), downscaled to 2400 px. The caption in
+  # content says it is a reconstruction.
+  - filename: "news/pursue-07-fbi-triangle-reconstruction-2026.jpg"
+    output_name: "pursue-07-fbi-triangle-reconstruction-2026"
+    category: "news"
+    quality: 85
+    grain_intensity: 0.0
+    enabled: true
+
+  # Page one of AIIR IR-1-57, 22d Bombardment Wing, Jan 19, 1957 (DOW-UAP-D155):
+  # B-52 radar contact over Saudi Arabia. Rendered at 150 dpi. Document scan.
+  - filename: "news/pursue-07-b52-radar-report-saudi-arabia-1957.jpg"
+    output_name: "pursue-07-b52-radar-report-saudi-arabia-1957"
+    category: "news"
+    quality: 88
+    grain_intensity: 0.0
+    enabled: true
+
+  # NASC memorandum, R. W. Hale to E. C. Welsh, May 29, 1963 (EOP-UAP-D002):
+  # "Conference with Frutkin -- Fragments". Rendered at 150 dpi. Document scan.
+  - filename: "news/pursue-07-frutkin-fragments-memo-1963.jpg"
+    output_name: "pursue-07-frutkin-fragments-memo-1963"
+    category: "news"
+    quality: 88
+    grain_intensity: 0.0
+    enabled: true
+
 # Global settings (used as defaults when not specified per image)
 global_settings:
   quality: 80
