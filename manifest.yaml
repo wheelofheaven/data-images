@@ -1223,6 +1223,33 @@ images:
     grain_intensity: 0.0
     enabled: true
 
+  # PURSUE Release 08 (2026-11-20). Rendered at 200 dpi from the official
+  # release_08_documents.zip PDFs. U.S. federal works, public domain.
+  # CIA memorandum, Edward Tauss, Aug 1, 1952 (CIA-UAP-D026). Document scan.
+  - filename: "news/pursue-08-cia-tauss-memo-1952.jpg"
+    output_name: "pursue-08-cia-tauss-memo-1952"
+    category: "news"
+    quality: 88
+    grain_intensity: 0.0
+    enabled: true
+
+  # Lt. Gen. D. L. Putt to ATIC, Feb 15, 1954, forwarding Kelly Johnson's
+  # report (DOW-UAP-D206, p. 2). Document scan.
+  - filename: "news/pursue-08-putt-letter-johnson-1954.jpg"
+    output_name: "pursue-08-putt-letter-johnson-1954"
+    category: "news"
+    quality: 88
+    grain_intensity: 0.0
+    enabled: true
+
+  # AARO summary slide, unresolved radar detection, 2023 (DOW-UAP-D165).
+  - filename: "news/pursue-08-aaro-radar-detection-2023.jpg"
+    output_name: "pursue-08-aaro-radar-detection-2023"
+    category: "news"
+    quality: 88
+    grain_intensity: 0.0
+    enabled: true
+
 # Global settings (used as defaults when not specified per image)
 global_settings:
   quality: 80
